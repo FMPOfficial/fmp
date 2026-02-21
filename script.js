@@ -4,19 +4,10 @@ const DATA_FILES = [
   "data/game.json", "data/others.json", "data/cookies.json",
   "data/methods.json", "data/membership.json"
 ];
-
-const THEME_KEY    = "theme";
-const SEARCH_KEY   = "fmp_search";
-const SORT_KEY     = "fmp_sort";
-const FILTER_KEY   = "fmp_filters";
 const BANNER_KEY   = "hideBanner";
-const RECENT_KEY   = "recentSearches";
-const FAV_KEY      = "fmp_favorites";
-const MAX_RECENTS  = 5;
 const WEEK_MS      = 6048e5;
 const SITE_URL     = "https://flamemodparadise.github.io/My-Site/";
 const CACHE_BUST   = "v=" + Date.now();
-
 const FUSE_OPTS = {
   includeScore: true,
   includeMatches: true,
@@ -34,12 +25,10 @@ const FUSE_OPTS = {
     { name: "_boost",           weight: 0.8 }
   ]
 };
-
 const CONTACT_MAP = {
   telegram: "https://t.me/fmpChatBot",
   discord:  "https://discord.gg/WVq522fsr3"
 };
-
 /** Default OG values to restore when leaving detail view */
 const DEFAULT_OG = {
   title:       "Flame Mod Paradise - Premium Mods & Tools for Automation",
@@ -48,9 +37,11 @@ const DEFAULT_OG = {
   image:       "assets/icons/fmp-icon.gif"
 };
 
+/* === STORAGE SHORTHAND === */
+const S = window.FMPStorage;
+
 /* === DOM REFS === */
 const $ = (id) => document.getElementById(id);
-
 const container        = $("main-tool-list");
 const filtersEl        = $("filters");
 const searchInput      = $("searchInput");
@@ -107,11 +98,6 @@ const debounce = (fn, ms) => {
   let id;
   return (...a) => { clearTimeout(id); id = setTimeout(() => fn(...a), ms); };
 };
-
-/**
- * Escape HTML-special characters to prevent XSS.
- * Also escapes single quotes for safe use in HTML attributes.
- */
 const esc = (s = "") =>
   String(s)
     .replace(/&/g, "&amp;")
@@ -119,13 +105,11 @@ const esc = (s = "") =>
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
-
 const nl2br = (s = "") => s.replace(/\n/g, "<br>");
 const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 const daysLeft = (d) => Math.max(0, Math.ceil((new Date(d) - Date.now()) / 864e5));
 const isRecent = (dateStr) => dateStr && (Date.now() - new Date(dateStr) < WEEK_MS);
 const getContact = (t) => CONTACT_MAP[t?.toLowerCase()] || "#";
-
 const getStock = (v) =>
   typeof v === "number"
     ? v === 0 ? "Out of stock" : `${v} in stock`
@@ -154,54 +138,20 @@ function formatDescription(text) {
   }).join("<br>");
 }
 
-/** Announce to screen readers via live region */
 function announce(msg) {
   if (liveRegion) liveRegion.textContent = msg;
 }
 
-/* === SAFE localStorage HELPERS === */
-function safeGetJSON(key, fallback) {
-  try { return JSON.parse(localStorage.getItem(key)) || fallback; }
-  catch { return fallback; }
+/* === FAVORITES (delegated to storage.js) === */
+function updateFavStat() {
+  if (statFavorites) statFavorites.textContent = S.getFavorites().length;
 }
-
-/* === FAVORITES (localStorage) === */
-function getFavorites() { return safeGetJSON(FAV_KEY, []); }
-
-function saveFavorites(arr) {
-  localStorage.setItem(FAV_KEY, JSON.stringify(arr));
-  updateFavStat();
-}
-
-function toggleFavorite(name) {
-  const favs = getFavorites();
-  const idx = favs.indexOf(name);
-  if (idx > -1) favs.splice(idx, 1);
-  else favs.push(name);
-  saveFavorites(favs);
-  return favs.includes(name);
-}
-
-function isFavorite(name) { return getFavorites().includes(name); }
-
-/* === PERSISTENT FILTERS (localStorage) === */
-function getStoredFilters() {
-  const parsed = safeGetJSON(FILTER_KEY, ["all"]);
-  return Array.isArray(parsed) && parsed.length ? parsed : ["all"];
-}
-
-function saveFilters(arr) { localStorage.setItem(FILTER_KEY, JSON.stringify(arr)); }
-function getStoredSort()   { return localStorage.getItem(SORT_KEY) || "name"; }
-function saveSort(v)       { localStorage.setItem(SORT_KEY, v); }
-function getStoredSearch()  { return localStorage.getItem(SEARCH_KEY) || ""; }
-function saveSearch(v)      { localStorage.setItem(SEARCH_KEY, v); }
 
 /* === HIGHLIGHT MATCHING === */
 function highlightMatch(text, matches, key) {
   if (!text) return "";
   const m = matches?.find((x) => x.key === key);
   if (!m?.indices?.length) return esc(text);
-
   const merged = m.indices
     .slice()
     .sort((a, b) => a[0] - b[0])
@@ -212,7 +162,6 @@ function highlightMatch(text, matches, key) {
       return acc;
     }, [])
     .filter(([s, e]) => e - s >= 1);
-
   let out = "", prev = 0;
   for (const [s, e] of merged) {
     out += esc(text.slice(prev, s));
@@ -250,7 +199,6 @@ function handleImgError(img) {
   let fbs;
   try { fbs = JSON.parse(img.dataset.fallbacks || "[]"); }
   catch { fbs = []; }
-
   let idx = (Number(img.dataset.fbIdx) || 0) + 1;
   if (idx < fbs.length) {
     img.dataset.fbIdx = idx;
@@ -278,9 +226,9 @@ function activateLazy(root = document) {
   }
 }
 
-/* === DARK MODE (auto-detect on first visit, simple toggle after) === */
+/* === DARK MODE === */
 function initTheme() {
-  const stored = localStorage.getItem(THEME_KEY);
+  const stored = S.getTheme();
   if (stored === "dark") {
     document.body.classList.add("dark");
   } else if (stored === "light") {
@@ -288,26 +236,25 @@ function initTheme() {
   } else {
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     document.body.classList.toggle("dark", prefersDark);
-    localStorage.setItem(THEME_KEY, prefersDark ? "dark" : "light");
+    S.setTheme(prefersDark ? "dark" : "light");
   }
-
   darkToggle?.addEventListener("click", () => {
     const isDark = document.body.classList.toggle("dark");
-    localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
+    S.setTheme(isDark ? "dark" : "light");
   });
 }
 
 /* === BANNER === */
 function initBanner() {
-  if (!banner || !closeBannerBtn || localStorage.getItem(BANNER_KEY)) return;
+  if (!banner || !closeBannerBtn || S.isBannerHidden()) return;
   setTimeout(() => banner.classList.remove("hidden"), 500);
   closeBannerBtn.addEventListener("click", () => {
     banner.classList.add("hidden");
-    localStorage.setItem(BANNER_KEY, "1");
+    S.hideBanner();
   });
 }
 
-/* === SCROLL HANDLERS (RAF-throttled) === */
+/* === SCROLL HANDLERS === */
 function initScroll() {
   window.addEventListener("scroll", () => {
     if (scrollTicking) return;
@@ -316,15 +263,12 @@ function initScroll() {
       const top = document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const pct = height > 0 ? clamp(top / height, 0, 1) : 0;
-
       if (scrollProgress && height > 0) {
         scrollProgress.style.transform = `scaleX(${pct})`;
       }
-
       const show = top > 300;
       scrollTopBtn?.classList.toggle("show", show);
       if (scrollPercent) scrollPercent.textContent = Math.round(pct * 100) + "%";
-
       if (isDetailMode && stickyBackBtn) {
         const detailHeader = container.querySelector(".tool-detail-header");
         if (detailHeader) {
@@ -333,11 +277,9 @@ function initScroll() {
           stickyBackBtn.classList.remove("visible");
         }
       }
-
       scrollTicking = false;
     });
   }, { passive: true });
-
   scrollTopBtn?.addEventListener("click", () =>
     window.scrollTo({ top: 0, behavior: "smooth" })
   );
@@ -363,12 +305,10 @@ function renderBadges(tool, mode = "card") {
   const isCard  = mode === "card";
   const cls     = isCard ? "tool-badge" : "badge";
   const badges  = [];
-
   if (!isCard) {
     if (isRecent(tool.release_date)) badges.push(`<span class="${cls} new-badge">NEW</span>`);
     if (isRecent(tool.update_date))  badges.push(`<span class="${cls} updated-badge">UPDATED</span>`);
   }
-
   if (hasDisc) {
     const label = isNum ? `-${tool.discount}%` : esc(String(tool.discount));
     badges.push(`<span class="${cls} discount-badge">${label}</span>`);
@@ -377,7 +317,6 @@ function renderBadges(tool, mode = "card") {
       if (t) badges.push(`<span class="${cls} discount-badge" data-expiry="${esc(tool.discount_expiry)}">${t}</span>`);
     }
   }
-
   if (hasOff) badges.push(`<span class="${cls} offer-badge">${esc(tool.offer)}</span>`);
   return badges.join("");
 }
@@ -407,34 +346,28 @@ function renderCards(list, target = container) {
   target.className = "main-grid";
   currentFilteredList = list;
   renderedCount = 0;
-
   if (!list.length) {
     target.innerHTML = "";
     emptyState?.classList.remove("hidden");
     announce("No tools found. Try adjusting your search or filters.");
     return;
   }
-
   emptyState?.classList.add("hidden");
-
   const frag = document.createDocumentFragment();
   const firstBatch = list.slice(0, renderBatchSize);
   for (const tool of firstBatch) {
     frag.appendChild(createCardElement(tool));
   }
   renderedCount = firstBatch.length;
-
   if (list.length > renderBatchSize) {
     frag.appendChild(createSentinel());
   }
-
   target.replaceChildren(frag);
   activateLazy(target);
   setupIncrementalRender(list, target);
   announce(`${list.length} tool${list.length !== 1 ? "s" : ""} found.`);
 }
 
-/** Create a sentinel element for intersection-based incremental loading */
 function createSentinel() {
   const sentinel = document.createElement("div");
   sentinel.id = "renderSentinel";
@@ -450,14 +383,12 @@ function createCardElement(tool) {
   card.setAttribute("role", "article");
   card.setAttribute("tabindex", "0");
   card.setAttribute("aria-label", `${tool.name}. ${tool.description || ""}`);
-
   const m = tool._matches || [];
   const name = highlightMatch(tool.name || "Unnamed", m, "name");
   const desc = nl2br(highlightMatch(tool.description || "", m, "description"));
   const tags = (tool.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("");
-  const fav = isFavorite(tool.name);
+  const fav = S.isFavorite(tool.name);
   const favLabel = fav ? "Remove from" : "Add to";
-
   card.innerHTML = `
     <div class="tool-thumb-wrapper">
       ${renderBadges(tool, "card")}
@@ -476,41 +407,32 @@ function createCardElement(tool) {
         ${recentTags(tool)}
       </div>
     </div>`;
-
   return card;
 }
 
 function setupIncrementalRender(list, target) {
   if (intersectionRenderObs) intersectionRenderObs.disconnect();
-
   intersectionRenderObs = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       if (!entry.isIntersecting) continue;
-
       intersectionRenderObs.unobserve(entry.target);
       entry.target.remove();
-
       const nextBatch = list.slice(renderedCount, renderedCount + renderBatchSize);
       if (!nextBatch.length) return;
-
       const frag = document.createDocumentFragment();
       for (const tool of nextBatch) {
         frag.appendChild(createCardElement(tool));
       }
       renderedCount += nextBatch.length;
-
       if (renderedCount < list.length) {
         frag.appendChild(createSentinel());
       }
-
       target.appendChild(frag);
       activateLazy(target);
-
       const newSentinel = target.querySelector("#renderSentinel");
       if (newSentinel) intersectionRenderObs.observe(newSentinel);
     }
   }, { rootMargin: "300px" });
-
   const sentinel = target.querySelector("#renderSentinel");
   if (sentinel) intersectionRenderObs.observe(sentinel);
 }
@@ -519,21 +441,18 @@ function setupIncrementalRender(list, target) {
 function buildFuse(list) { return new Fuse(list, FUSE_OPTS); }
 
 function getBoostList() {
-  const recents = getRecents();
+  const recents = S.getRecents();
   return allTools.map(t => ({ ...t, _boost: recents.includes(t.name) ? 1 : 0 }));
 }
 
 function advancedSearch(query) {
   const q = query.trim().toLowerCase();
   if (!q) return [...allTools];
-
   const exact = allTools.filter(t => t.name.toLowerCase() === q);
   const startsWith = allTools.filter(t =>
     t.name.toLowerCase().startsWith(q) && t.name.toLowerCase() !== q
   );
-
   const matchedNames = new Set([...exact.map(t => t.name), ...startsWith.map(t => t.name)]);
-
   const contains = allTools.filter(t => {
     if (matchedNames.has(t.name)) return false;
     const n = t.name.toLowerCase();
@@ -541,37 +460,31 @@ function advancedSearch(query) {
     const tg = (t.tags || []).join(" ").toLowerCase();
     return n.includes(q) || kw.includes(q) || tg.includes(q);
   });
-
   for (const t of contains) matchedNames.add(t.name);
-
   const fuse = buildFuse(getBoostList());
   const fuzzy = fuse.search(query)
     .filter(({ item }) => !matchedNames.has(item.name))
     .map(({ item, matches }) => ({ ...item, _matches: matches }));
-
   const mark = (arr) => arr.map(t => ({ ...t, _matches: t._matches || [] }));
   return [...mark(exact), ...mark(startsWith), ...mark(contains), ...fuzzy];
 }
 
 /* === FILTER & SORT === */
 function applyAll() {
-  const query   = getStoredSearch();
-  const sort    = getStoredSort();
-  const filters = getStoredFilters();
-
+  const query   = S.getStoredSearch();
+  const sort    = S.getStoredSort();
+  const filters = S.getStoredFilters();
   let list;
   if (filters.includes("all") || !filters.length) {
     list = [...allTools];
   } else {
     list = allTools.filter(t => filters.includes((t.type || "").toLowerCase()));
   }
-
   if (query.trim()) {
     const searched = advancedSearch(query);
     const filterSet = new Set(list.map(t => t.name));
     list = searched.filter(t => filterSet.has(t.name));
   }
-
   switch (sort) {
     case "release_date":
       list.sort((a, b) => new Date(b.release_date || 0) - new Date(a.release_date || 0));
@@ -599,33 +512,27 @@ function applyAll() {
         });
       }
   }
-
   renderCards(list);
-
   filtersEl?.querySelectorAll("button").forEach(b => {
     const type = b.dataset.filter;
     b.classList.toggle("active",
       filters.includes("all") ? type === "all" : filters.includes(type)
     );
   });
-
   if (searchInput) searchInput.value = query;
   if (sortSelect) sortSelect.value = sort;
 }
 
-/* === FILTER BUTTONS (with count badges, multi-select) === */
+/* === FILTER BUTTONS === */
 function initFilters() {
   if (!filtersEl) return;
-
   const typeCounts = {};
   for (const t of allTools) {
     const type = (t.type || "").toLowerCase();
     if (type) typeCounts[type] = (typeCounts[type] || 0) + 1;
   }
-
   const types = Object.keys(typeCounts).sort();
   const frag = document.createDocumentFragment();
-
   const mkBtn = (label, count) => {
     const b = document.createElement("button");
     b.dataset.filter = label.toLowerCase();
@@ -638,15 +545,13 @@ function initFilters() {
     b.addEventListener("click", () => handleFilterClick(label.toLowerCase()));
     return b;
   };
-
   frag.appendChild(mkBtn("All"));
   for (const t of types) frag.appendChild(mkBtn(t, typeCounts[t]));
   filtersEl.replaceChildren(frag);
 }
 
 function handleFilterClick(type) {
-  let filters = getStoredFilters();
-
+  let filters = S.getStoredFilters();
   if (type === "all") {
     filters = ["all"];
   } else {
@@ -658,25 +563,23 @@ function handleFilterClick(type) {
     }
     if (!filters.length) filters = ["all"];
   }
-
-  saveFilters(filters);
-
+  S.saveFilters(filters);
   filtersEl?.querySelectorAll("button").forEach(b => {
     const ft = b.dataset.filter;
     const checked = filters.includes("all") ? ft === "all" : filters.includes(ft);
     b.setAttribute("aria-checked", String(checked));
   });
-
   applyAll();
 }
 
-/* === CARD CLICK → DETAIL (event delegation) === */
+/* === CARD CLICK → DETAIL === */
 container?.addEventListener("click", (e) => {
   const favBtn = e.target.closest(".fav-btn");
   if (favBtn) {
     e.stopPropagation();
     const name = favBtn.dataset.fav;
-    const nowFav = toggleFavorite(name);
+    const nowFav = S.toggleFavorite(name);
+    updateFavStat();
     const label = nowFav ? "Remove from" : "Add to";
     favBtn.classList.toggle("active", nowFav);
     favBtn.textContent = nowFav ? "♥" : "♡";
@@ -685,7 +588,6 @@ container?.addEventListener("click", (e) => {
     announce(nowFav ? `${name} added to favorites` : `${name} removed from favorites`);
     return;
   }
-
   const card = e.target.closest(".tool-card");
   if (!card) return;
   const tool = allTools.find(t => t.name === card.dataset.name);
@@ -706,7 +608,6 @@ function getSimilarTools(tool, limit = 6) {
   const toolTags = new Set((tool.tags || []).map(t => t.toLowerCase()));
   const toolKws  = new Set((tool.keywords || []).map(k => k.toLowerCase()));
   const toolType = (tool.type || "").toLowerCase();
-
   return allTools
     .filter(t => t.name !== tool.name)
     .map(t => {
@@ -730,12 +631,10 @@ function getSimilarTools(tool, limit = 6) {
 
 function buildRecommendationHTML(tools) {
   if (!tools.length) return "";
-
   const cards = tools.map(t => {
     const tags = (t.tags || []).slice(0, 2).map(tag => `<span class="tag">${esc(tag)}</span>`).join("");
     const rawDesc = t.description || "";
     const desc = rawDesc.length > 60 ? esc(rawDesc.slice(0, 60)) + "…" : esc(rawDesc);
-
     return `
       <div class="rec-card" data-name="${esc(t.name)}" role="article" tabindex="0" aria-label="${esc(t.name)}">
         <div class="rec-thumb">${buildImgHTML(t.image || "assets/placeholder.jpg", t.name)}</div>
@@ -746,7 +645,6 @@ function buildRecommendationHTML(tools) {
         </div>
       </div>`;
   }).join("");
-
   return `
     <section class="tool-recommendations">
       <h3>You Might Also Like</h3>
@@ -760,12 +658,9 @@ function showDetail(tool, fromHash = false) {
     savedScrollY = window.scrollY;
     location.hash = `tool=${encodeURIComponent(tool.name)}`;
   }
-
   isDetailMode = true;
   document.body.classList.add("detail-mode");
   stickyBackBtn?.classList.remove("hidden");
-
-  // Breadcrumb
   if (breadcrumbNav) {
     breadcrumbNav.classList.remove("hidden");
     if (breadcrumbCat) {
@@ -774,12 +669,10 @@ function showDetail(tool, fromHash = false) {
     }
     if (breadcrumbCur) breadcrumbCur.textContent = tool.name;
   }
-
   updateMeta(tool);
   updateBreadcrumbLD(tool);
   container.className = "detail-wrapper";
 
-  // Pricing
   let pricingHTML = "";
   if (tool.pricing) {
     const li = Object.entries(tool.pricing)
@@ -789,7 +682,6 @@ function showDetail(tool, fromHash = false) {
     pricingHTML = `<div class="pricing-block"><strong>Price</strong><p class="price-single">${nl2br(esc(tool.price))}</p></div>`;
   }
 
-  // Meta grid
   const meta = [];
   if (tool.discount) {
     const isNum = !isNaN(parseFloat(tool.discount));
@@ -801,12 +693,10 @@ function showDetail(tool, fromHash = false) {
   meta.push({ label: "Updated",  value: esc(tool.update_date  || "N/A") });
   if (tool.type) meta.push({ label: "Type", value: esc(tool.type) });
   if (tool.version) meta.push({ label: "Version", value: esc(tool.version) });
-
   const metaHTML = meta.map(m =>
     `<div class="meta-item"><span class="meta-label">${m.label}</span><span class="meta-value">${m.value}</span></div>`
   ).join("");
 
-  // Gallery
   const allImages = [tool.image, ...(tool.images || [])].filter(Boolean);
   const gallery = allImages.length > 1
     ? `<div class="tool-gallery" role="list" aria-label="Image gallery">${allImages.map((img, idx) =>
@@ -814,29 +704,24 @@ function showDetail(tool, fromHash = false) {
           .replace("<img ", `<img role="listitem" data-gallery-idx="${idx}" ${idx === 0 ? 'class="active"' : ''} `)
       ).join("")}</div>`
     : "";
-
   currentModalImages = allImages;
   currentModalIdx = 0;
 
-  // Video
   const video = tool.video
     ? `<iframe src="${esc(tool.video)}" class="tool-video" allowfullscreen loading="lazy"
         title="Tool video preview"
         style="width:100%;aspect-ratio:16/9;border:none;border-radius:var(--radius-md);margin-top:.5rem"></iframe>`
     : "";
 
-  // Description
   const summary = tool.description || (tool.long_description ? tool.long_description.split("\n")[0] : "No description available.");
   const fullDesc = tool.long_description || tool.description || "No description available.";
   const isLongDesc = fullDesc.length > 400;
 
-  // Tags
   const tagsHTML = (tool.tags || []).length
     ? `<div class="tool-detail-tags">${(tool.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join("")}${tool.popular ? '<span class="tag">popular</span>' : ""}</div>`
     : "";
 
-  // Favorite state
-  const fav = isFavorite(tool.name);
+  const fav = S.isFavorite(tool.name);
   const safeName = esc(tool.name);
   const favLabel = fav ? "Remove from" : "Add to";
 
@@ -860,7 +745,6 @@ function showDetail(tool, fromHash = false) {
         </div>
         <p class="tool-detail-summary">${esc(summary)}</p>
       </header>
-
       <div class="tool-detail-main">
         <div class="tool-detail-left">
           ${buildImgHTML(tool.image || "assets/placeholder.jpg", tool.name).replace("<img ", '<img class="tool-main-img" ')}
@@ -879,33 +763,25 @@ function showDetail(tool, fromHash = false) {
           </div>
         </div>
       </div>
-
       ${tagsHTML}
-
       <section class="tool-detail-description">
         <h3>Full Description</h3>
         <div class="desc ${isLongDesc ? "desc-collapsible" : ""}" id="descContent">${formatDescription(fullDesc)}</div>
         ${isLongDesc ? '<button class="desc-toggle-btn" id="descToggleBtn" aria-expanded="false">Show more ▾</button>' : ""}
       </section>
-
       ${buildRecommendationHTML(getSimilarTools(tool))}
     </div>`;
-
   wireDetailEvents(tool);
   activateLazy(container);
-
   requestAnimationFrame(() => {
     const el = container.querySelector(".tool-detail");
     if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
   });
 }
 
-/** Wire all interactive events inside the detail view */
 function wireDetailEvents(tool) {
-  // Back button
   $("detailBackBtn")?.addEventListener("click", clearHash);
 
-  // Share button
   $("shareBtn")?.addEventListener("click", () => {
     const url = `${location.origin}${location.pathname}#tool=${encodeURIComponent(tool.name)}`;
     navigator.clipboard.writeText(url).then(() => {
@@ -923,11 +799,11 @@ function wireDetailEvents(tool) {
     });
   });
 
-  // Favorite in detail
   $("detailFavBtn")?.addEventListener("click", () => {
     const btn = $("detailFavBtn");
     const name = btn.dataset.fav;
-    const nowFav = toggleFavorite(name);
+    const nowFav = S.toggleFavorite(name);
+    updateFavStat();
     const label = nowFav ? "Remove from" : "Add to";
     btn.classList.toggle("active", nowFav);
     btn.textContent = nowFav ? "♥ Saved" : "♡ Save";
@@ -935,7 +811,6 @@ function wireDetailEvents(tool) {
     announce(nowFav ? `${name} added to favorites` : `${name} removed from favorites`);
   });
 
-  // Collapsible description
   const descToggle = $("descToggleBtn");
   const descContent = $("descContent");
   if (descToggle && descContent) {
@@ -946,7 +821,6 @@ function wireDetailEvents(tool) {
     });
   }
 
-  // Main image click → modal
   const mainImg = container.querySelector(".tool-main-img");
   if (mainImg) {
     mainImg.style.cursor = "pointer";
@@ -957,7 +831,6 @@ function wireDetailEvents(tool) {
     });
   }
 
-  // Gallery images
   container.querySelectorAll(".tool-gallery img").forEach(img => {
     if (img.dataset.src) img.src = img.dataset.src;
     img.style.cursor = "pointer";
@@ -974,12 +847,10 @@ function wireDetailEvents(tool) {
     });
   });
 
-  // Requirements
   container.querySelector(".requirements-btn")?.addEventListener("click", (e) => {
     showRequirements(e.currentTarget.dataset.tool);
   });
 
-  // Recommendations
   container.querySelectorAll(".rec-card").forEach(card => {
     const handler = () => {
       const t = allTools.find(x => x.name === card.dataset.name);
@@ -1076,17 +947,14 @@ function resetBreadcrumbLD() {
   });
 }
 
-/* === IMAGE MODAL (fullscreen gallery with thumbnail strip) === */
+/* === IMAGE MODAL === */
 function openModal(src) {
   if (!imageModal || !modalImage) return;
   modalImage.src = src;
   imageModal.classList.remove("hidden");
   imageModal.setAttribute("aria-hidden", "false");
-
-  // Clean up old nav arrows
   imageModal.querySelectorAll(".modal-nav").forEach(n => n.remove());
 
-  // Build thumbnail strip
   if (modalThumbStrip && currentModalImages.length > 1) {
     modalThumbStrip.classList.remove("hidden");
     modalThumbStrip.innerHTML = currentModalImages.map((img, i) =>
@@ -1094,7 +962,6 @@ function openModal(src) {
             src="${esc(img)}" data-idx="${i}"
             alt="Thumbnail ${i + 1}" role="listitem">`
     ).join("");
-
     modalThumbStrip.querySelectorAll(".modal-thumb-item").forEach(thumb => {
       thumb.addEventListener("click", () => {
         const idx = parseInt(thumb.dataset.idx);
@@ -1110,7 +977,6 @@ function openModal(src) {
     modalThumbStrip.classList.add("hidden");
   }
 
-  // Nav arrows for multi-image galleries
   if (currentModalImages.length > 1) {
     const content = imageModal.querySelector(".image-modal-content");
     if (content) {
@@ -1130,7 +996,6 @@ function openModal(src) {
       content.appendChild(makeNavBtn("next", "›", "Next image"));
     }
   }
-
   trapFocus(imageModal);
 }
 
@@ -1139,7 +1004,6 @@ function navigateModal(dir) {
   currentModalIdx = (currentModalIdx + dir + currentModalImages.length) % currentModalImages.length;
   if (modalImage) modalImage.src = currentModalImages[currentModalIdx];
   updateGalleryActive();
-
   if (modalThumbStrip) {
     modalThumbStrip.querySelectorAll(".modal-thumb-item").forEach((t, i) =>
       t.classList.toggle("active", i === currentModalIdx)
@@ -1168,7 +1032,6 @@ modalCloseBtn?.addEventListener("click", closeModal);
 imageModal?.addEventListener("click", (e) => {
   if (e.target === imageModal) closeModal();
 });
-
 document.addEventListener("keydown", (e) => {
   if (!imageModal || imageModal.classList.contains("hidden")) return;
   if (e.key === "Escape") closeModal();
@@ -1230,15 +1093,8 @@ document.addEventListener("keydown", (e) => {
 });
 
 /* === AUTOCOMPLETE === */
-function getRecents() { return safeGetJSON(RECENT_KEY, []); }
-
-function saveRecent(name) {
-  const r = [name, ...getRecents().filter(x => x !== name)].slice(0, MAX_RECENTS);
-  localStorage.setItem(RECENT_KEY, JSON.stringify(r));
-}
-
 function clearRecentSearches() {
-  localStorage.removeItem(RECENT_KEY);
+  S.clearRecents();
   autocompleteBox?.classList.add("hidden");
   clearHistoryBtn?.classList.add("hidden");
   announce("Search history cleared.");
@@ -1261,13 +1117,13 @@ function renderAutoItems(items, onPick) {
 }
 
 function showRecents() {
-  const r = getRecents();
+  const r = S.getRecents();
   if (!r.length) { clearHistoryBtn?.classList.add("hidden"); return; }
   clearHistoryBtn?.classList.remove("hidden");
   renderAutoItems(r, (name) => {
-    saveRecent(name);
+    S.saveRecent(name);
     searchInput.value = name;
-    saveSearch(name);
+    S.saveSearch(name);
     applyAll();
     setACExpanded(false);
   });
@@ -1278,42 +1134,37 @@ function updateACSelection(items) {
 }
 
 const debouncedApply = debounce((q) => {
-  saveSearch(q);
+  S.saveSearch(q);
   applyAll();
 }, 220);
 
 function initAutocomplete() {
   if (!searchInput || !autocompleteBox) return;
-
   searchInput.addEventListener("input", () => {
     const q = searchInput.value.trim();
     clearHistoryBtn?.classList.add("hidden");
-
     if (!q) {
       setACExpanded(false);
       debouncedApply("");
       return;
     }
-
     const results = advancedSearch(q).slice(0, 6);
     if (results.length) {
       renderAutoItems(results.map(t => t.name), (name) => {
-        saveRecent(name);
-        saveSearch(name);
+        S.saveRecent(name);
+        S.saveSearch(name);
         applyAll();
         setACExpanded(false);
       });
     } else {
       setACExpanded(false);
     }
-
     debouncedApply(q);
   });
 
   searchInput.addEventListener("keydown", (e) => {
     const items = autocompleteBox.querySelectorAll(".ac-item");
     if (!items.length) return;
-
     if (e.key === "ArrowDown") {
       e.preventDefault();
       selectedIdx = (selectedIdx + 1) % items.length;
@@ -1348,14 +1199,14 @@ function initAutocomplete() {
 
 /* === SORT SELECT === */
 sortSelect?.addEventListener("change", () => {
-  saveSort(sortSelect.value);
+  S.saveSort(sortSelect.value);
   applyAll();
 });
 
 /* === EMPTY STATE CLEAR BUTTON === */
 emptyStateClear?.addEventListener("click", () => {
-  saveSearch("");
-  saveFilters(["all"]);
+  S.saveSearch("");
+  S.saveFilters(["all"]);
   if (searchInput) searchInput.value = "";
   applyAll();
 });
@@ -1367,7 +1218,7 @@ breadcrumbCat?.addEventListener("click", (e) => {
   const cat = breadcrumbCat.textContent.toLowerCase();
   clearHash();
   if (cat && cat !== "tools") {
-    saveFilters([cat]);
+    S.saveFilters([cat]);
     applyAll();
   }
 });
@@ -1401,24 +1252,18 @@ function updateStats() {
   updateFavStat();
 }
 
-function updateFavStat() {
-  if (statFavorites) statFavorites.textContent = getFavorites().length;
-}
-
-/* === PULL TO REFRESH (mobile) === */
+/* === PULL TO REFRESH === */
 function initPullToRefresh() {
   if (!pullToRefresh) return;
   let startY = 0;
   let pulling = false;
   const threshold = 80;
-
   document.addEventListener("touchstart", (e) => {
     if (window.scrollY === 0 && !isDetailMode) {
       startY = e.touches[0].clientY;
       pulling = true;
     }
   }, { passive: true });
-
   document.addEventListener("touchmove", (e) => {
     if (!pulling) return;
     const diff = e.touches[0].clientY - startY;
@@ -1426,7 +1271,6 @@ function initPullToRefresh() {
       pullToRefresh.classList.add("visible");
     }
   }, { passive: true });
-
   document.addEventListener("touchend", () => {
     if (!pulling) return;
     pulling = false;
@@ -1471,11 +1315,9 @@ async function loadData() {
   container.innerHTML = '<div class="tool-card skeleton"></div>'.repeat(getSkeletonCount());
   emptyState?.classList.add("hidden");
   showLoadProgress(5);
-
   try {
     const total = DATA_FILES.length;
     let loaded = 0;
-
     const results = await Promise.allSettled(
       DATA_FILES.map(url => {
         const fetchUrl = url + (url.includes("?") ? "&" : "?") + CACHE_BUST;
@@ -1486,11 +1328,9 @@ async function loadData() {
         });
       })
     );
-
     const merged = results
       .filter(r => r.status === "fulfilled")
       .flatMap(r => r.value);
-
     const seen = new Set();
     allTools = merged.filter(t => {
       if (!t.name || !t.type) return false;
@@ -1499,15 +1339,12 @@ async function loadData() {
       seen.add(key);
       return true;
     });
-
-    // Normalize tags & keywords
     for (const t of allTools) {
       if (typeof t.tags === "string") t.tags = t.tags.split(",").map(s => s.trim());
       if (typeof t.keywords === "string") t.keywords = t.keywords.split(",").map(s => s.trim());
       if (!Array.isArray(t.tags)) t.tags = [];
       if (!Array.isArray(t.keywords)) t.keywords = [];
     }
-
     showLoadProgress(95);
     initFilters();
     applyAll();

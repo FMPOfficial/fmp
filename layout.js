@@ -10,10 +10,11 @@
   const inSubdir = path.includes("/pages/") || path.includes("/resources/");
   const prefix = inSubdir ? "../" : "./";
 
-  const isHome    = file === "" || file === "index.html";
-  const isReviews = file === "reviews.html";
-  const isContact = file === "contact.html";
-  const isFaq     = file === "faq.html";
+  const isHome      = file === "" || file === "index.html";
+  const isReviews   = file === "reviews.html";
+  const isContact   = file === "contact.html";
+  const isFaq       = file === "faq.html";
+  const isFavourite = file === "favourite.html";
 
   const navHTML = `
     <nav class="navbar" role="navigation">
@@ -25,6 +26,7 @@
       <button aria-label="Toggle menu" class="navbar-toggle" id="navbarToggle">☰</button>
       <div class="navbar-right" id="navbarMenu">
         <a href="${prefix}index.html"${isHome ? ' class="active"' : ""}>Home</a>
+        <a href="${prefix}pages/favourite.html"${isFavourite ? ' class="active"' : ""}>Favorites</a>
         <a href="${prefix}pages/reviews.html"${isReviews ? ' class="active"' : ""}>Reviews</a>
         <a href="${prefix}pages/contact.html"${isContact ? ' class="active"' : ""}>Contact</a>
         <a href="${prefix}pages/faq.html"${isFaq ? ' class="active"' : ""}>FAQ</a>
@@ -71,6 +73,12 @@
               <a href="${prefix}index.html">
                 <img src="${prefix}assets/icons/footers-icons/house.png" alt="Home Icon" class="footer-subicon" />
                 Home
+              </a>
+            </li>
+            <li>
+              <a href="${prefix}pages/favourite.html">
+                <img src="${prefix}assets/icons/footers-icons/reviews.png" alt="Favorites Icon" class="footer-subicon" />
+                Favorites
               </a>
             </li>
             <li>

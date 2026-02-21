@@ -1,0 +1,510 @@
+/* =============================================
+   favorites.css — Favorites Page Styles
+   Layers on top of ../style.css (inherits tokens)
+   ============================================= */
+
+/* ---------- PAGE HEADER ---------- */
+.fav-page-header {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    margin-bottom: 1.75rem;
+  }
+  
+  .fav-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    padding: .4rem .85rem;
+    border-radius: var(--radius-md);
+    font-size: .85rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    transition: all var(--transition-fast);
+    border: 1px solid var(--color-detail-back-border);
+    background: var(--color-detail-back-bg);
+    color: var(--color-detail-back-text);
+    text-decoration: none;
+  }
+  .fav-back-link:hover {
+    background: var(--color-detail-back-hover-bg);
+    color: var(--color-detail-back-hover-text);
+    text-decoration: none;
+  }
+  
+  .fav-heading-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .fav-title {
+    font-size: clamp(1.5rem, 1.2rem + .8vw, 2rem);
+    font-weight: 700;
+    color: var(--color-text-strong);
+    letter-spacing: -.01em;
+    line-height: 1.2;
+  }
+  
+  .fav-subtitle {
+    margin-top: .3rem;
+    font-size: .9rem;
+    color: var(--color-text-muted);
+  }
+  
+  /* ---------- ACTIONS ---------- */
+  .fav-actions {
+    display: flex;
+    gap: .5rem;
+    flex-shrink: 0;
+  }
+  
+  .fav-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    padding: .4rem .8rem;
+    border-radius: var(--radius-md);
+    font-size: .8rem;
+    font-weight: 500;
+    border: 1px solid var(--color-border-subtle);
+    background: var(--color-surface-raised);
+    color: var(--color-text-muted);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+  }
+  .fav-action-btn:hover {
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  .fav-action-icon {
+    font-size: .75rem;
+  }
+  
+  .fav-clear-btn:hover {
+    background: var(--color-danger-soft);
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+  }
+  
+  /* ---------- SEARCH ---------- */
+  .fav-search-wrap {
+    margin-top: 1.15rem;
+    max-width: 420px;
+  }
+  .fav-search-wrap input {
+    width: 100%;
+    padding: .55rem .85rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-subtle);
+    background: var(--color-input-bg);
+    color: var(--color-input-text);
+    font-size: .88rem;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-theme);
+  }
+  .fav-search-wrap input::placeholder {
+    color: var(--color-text-muted);
+  }
+  .fav-search-wrap input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-glow);
+  }
+  
+  /* ---------- FAVORITES GRID ---------- */
+  .fav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  
+  /* ---------- FAVORITE CARD ---------- */
+  .fav-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease, background var(--transition-theme);
+    animation: fadeIn .3s ease-out both;
+  }
+  .fav-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-card-hover-border);
+    box-shadow: 0 20px 40px var(--color-card-hover-shadow), 0 0 0 1px var(--color-primary-glow);
+  }
+  
+  /* Staggered entrance */
+  .fav-card:nth-child(1)  { animation-delay: .00s }
+  .fav-card:nth-child(2)  { animation-delay: .04s }
+  .fav-card:nth-child(3)  { animation-delay: .08s }
+  .fav-card:nth-child(4)  { animation-delay: .12s }
+  .fav-card:nth-child(5)  { animation-delay: .16s }
+  .fav-card:nth-child(6)  { animation-delay: .20s }
+  .fav-card:nth-child(7)  { animation-delay: .24s }
+  .fav-card:nth-child(8)  { animation-delay: .28s }
+  .fav-card:nth-child(9)  { animation-delay: .32s }
+  .fav-card:nth-child(10) { animation-delay: .36s }
+  
+  .fav-card-thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-thumb-bg);
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .fav-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+  }
+  .fav-card:hover .fav-card-thumb img {
+    transform: scale(1.05);
+  }
+  
+  /* Remove button on card */
+  .fav-remove-btn {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 3;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: rgba(239, 68, 68, .15);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .85rem;
+    color: #ef4444;
+    transition: all var(--transition-fast);
+    border: 1px solid rgba(239, 68, 68, .25);
+    cursor: pointer;
+  }
+  .fav-remove-btn:hover {
+    background: rgba(239, 68, 68, .85);
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  /* Card type badge */
+  .fav-type-badge {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    z-index: 2;
+    padding: .15rem .55rem;
+    border-radius: var(--radius-sm);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: #fff;
+    backdrop-filter: blur(6px);
+    background: rgba(99, 102, 241, .85);
+  }
+  
+  .fav-card-body {
+    padding: .85rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    flex: 1;
+  }
+  
+  .fav-card-name {
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--color-text-strong);
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .fav-card-name a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .fav-card-name a:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .fav-card-desc {
+    font-size: .82rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .fav-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+    margin-top: auto;
+    padding-top: .35rem;
+  }
+  
+  .fav-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .55rem 1rem;
+    border-top: 1px solid var(--color-border-subtle);
+    background: var(--color-surface-soft);
+    transition: background var(--transition-theme);
+  }
+  
+  .fav-card-price {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  
+  .fav-card-view {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    padding: .3rem .7rem;
+    border-radius: var(--radius-md);
+    font-size: .75rem;
+    font-weight: 500;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+  .fav-card-view:hover {
+    background: var(--color-primary-strong);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+  
+  /* ---------- EMPTY STATE ---------- */
+  .fav-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    animation: fadeIn .4s ease-out;
+  }
+  
+  .fav-empty-heart {
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--color-text-muted);
+    opacity: .35;
+    margin-bottom: 1rem;
+    animation: heartPulse 2s ease-in-out infinite;
+  }
+  @keyframes heartPulse {
+    0%, 100% { transform: scale(1); opacity: .35 }
+    50% { transform: scale(1.1); opacity: .5 }
+  }
+  
+  .fav-empty-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text-strong);
+    margin-bottom: .4rem;
+  }
+  
+  .fav-empty-text {
+    font-size: .9rem;
+    color: var(--color-text-muted);
+    max-width: 340px;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  .fav-empty-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .6rem 1.3rem;
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+  .fav-empty-btn:hover {
+    background: var(--color-primary-strong);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(99, 102, 241, .4);
+    text-decoration: none;
+  }
+  
+  /* ---------- NO SEARCH RESULTS ---------- */
+  .fav-no-results {
+    text-align: center;
+    padding: 2.5rem 1rem;
+  }
+  .fav-no-results-text {
+    font-size: .95rem;
+    color: var(--color-text-muted);
+    margin-bottom: .75rem;
+  }
+  .fav-no-results-btn {
+    padding: .45rem 1rem;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+    font-size: .85rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  .fav-no-results-btn:hover {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  /* ---------- CONFIRM DIALOG ---------- */
+  .fav-confirm-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, .6);
+    backdrop-filter: blur(4px);
+    animation: modalFadeIn .2s ease-out;
+  }
+  .fav-confirm-box {
+    width: min(400px, 90vw);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    background: var(--color-modal-content-bg);
+    border: 1px solid var(--color-border-subtle);
+    box-shadow: var(--shadow-soft);
+    animation: detailSlideIn .25s ease-out;
+  }
+  .fav-confirm-box h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-strong);
+    margin-bottom: .4rem;
+  }
+  .fav-confirm-box p {
+    font-size: .88rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+  .fav-confirm-actions {
+    display: flex;
+    gap: .6rem;
+    justify-content: flex-end;
+  }
+  .fav-confirm-cancel {
+    padding: .45rem .95rem;
+    border-radius: var(--radius-md);
+    font-size: .85rem;
+    font-weight: 500;
+    background: var(--color-surface-raised);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border-subtle);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  .fav-confirm-cancel:hover {
+    background: var(--color-detail-back-hover-bg);
+    color: var(--color-text-strong);
+  }
+  .fav-confirm-delete {
+    padding: .45rem .95rem;
+    border-radius: var(--radius-md);
+    font-size: .85rem;
+    font-weight: 500;
+    background: var(--color-danger);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  .fav-confirm-delete:hover {
+    background: #dc2626;
+    transform: translateY(-1px);
+  }
+  
+  /* ---------- CARD REMOVE ANIMATION ---------- */
+  .fav-card.removing {
+    animation: cardRemove .35s ease-out forwards;
+  }
+  @keyframes cardRemove {
+    to {
+      opacity: 0;
+      transform: scale(.9) translateY(10px);
+    }
+  }
+  
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 768px) {
+    .fav-heading-row {
+      flex-direction: column;
+      gap: .75rem;
+    }
+    .fav-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .fav-grid {
+      grid-template-columns: 1fr;
+      gap: .75rem;
+    }
+    .fav-card {
+      flex-direction: row;
+      height: 110px;
+    }
+    .fav-card-thumb {
+      aspect-ratio: 1;
+      width: 110px;
+      min-height: unset;
+      flex-shrink: 0;
+      border-radius: 0;
+    }
+    .fav-card-body {
+      padding: .65rem .85rem;
+      justify-content: center;
+    }
+    .fav-card-desc {
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+    }
+    .fav-card-tags {
+      display: none;
+    }
+    .fav-card-footer {
+      display: none;
+    }
+    .fav-actions {
+      width: 100%;
+    }
+    .fav-action-btn {
+      flex: 1;
+      justify-content: center;
+    }
+  }

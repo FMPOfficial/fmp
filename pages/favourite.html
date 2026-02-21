@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your saved favorite tools on Flame Mod Paradise." />
+
+  <meta property="og:title" content="My Favorites - Flame Mod Paradise" />
+  <meta property="og:description" content="View and manage your saved favorite tools." />
+  <meta property="og:url" content="https://flamemodparadise.github.io/My-Site/pages/favourite.html" />
+  <meta property="og:image" content="../assets/icons/fmp-icon.gif" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Flame Mod Paradise" />
+
+  <link rel="canonical" href="https://flamemodparadise.github.io/My-Site/pages/favourite.html" />
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="icon" href="../assets/icons/icon-192.png" sizes="192x192" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheets (reuse parent + page-specific) -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/favourite.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" /></noscript>
+
+  <title>My Favorites - Flame Mod Paradise</title>
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="mymain">
+    <div id="site-header"></div>
+
+    <main class="container" id="main-content" role="main">
+
+      <!-- Page Header -->
+      <div class="fav-page-header">
+        <a href="../index.html" class="fav-back-link" aria-label="Back to home">← Back to Tools</a>
+        <div class="fav-heading-row">
+          <div>
+            <h1 class="fav-title">♥ My Favorites</h1>
+            <p class="fav-subtitle" id="favCount">Loading your saved tools…</p>
+          </div>
+          <div class="fav-actions">
+            <button class="fav-action-btn fav-sort-btn" id="favSortBtn" aria-label="Sort favorites" title="Sort favorites">
+              <span class="fav-action-icon">↕</span> Sort
+            </button>
+            <button class="fav-action-btn fav-clear-btn" id="favClearBtn" aria-label="Remove all favorites" title="Remove all favorites">
+              <span class="fav-action-icon">✕</span> Clear All
+            </button>
+          </div>
+        </div>
+
+        <!-- Search within favorites -->
+        <div class="fav-search-wrap">
+          <input type="search" id="favSearch" placeholder="Search your favorites…" aria-label="Search favorites" autocomplete="off" />
+        </div>
+      </div>
+
+      <!-- Favorites Grid -->
+      <section class="fav-grid" id="favGrid" aria-label="Your favorite tools"></section>
+
+      <!-- Empty State -->
+      <div class="fav-empty hidden" id="favEmpty" role="status">
+        <div class="fav-empty-heart" aria-hidden="true">♡</div>
+        <h2 class="fav-empty-title">No favorites yet</h2>
+        <p class="fav-empty-text">Head back to the tools page and tap the heart on anything you like — it'll show up here.</p>
+        <a href="../index.html" class="fav-empty-btn">Browse Tools</a>
+      </div>
+
+      <!-- No Search Results -->
+      <div class="fav-no-results hidden" id="favNoResults" role="status">
+        <p class="fav-no-results-text">No favorites match your search.</p>
+        <button class="fav-no-results-btn" id="favClearSearch">Clear search</button>
+      </div>
+
+      <!-- Confirm Clear Dialog -->
+      <div class="fav-confirm-overlay hidden" id="favConfirmOverlay" role="dialog" aria-label="Confirm clear all" aria-modal="true">
+        <div class="fav-confirm-box">
+          <h3>Remove all favorites?</h3>
+          <p>This will clear your entire favorites list. This can't be undone.</p>
+          <div class="fav-confirm-actions">
+            <button class="fav-confirm-cancel" id="favConfirmCancel">Cancel</button>
+            <button class="fav-confirm-delete" id="favConfirmDelete">Yes, clear all</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <!-- Scripts: layout (shared header/footer), storage, then favorites logic -->
+  <script src="../layout.js" defer></script>
+  <script src="../storage.js" defer></script>
+  <script src="../scripts/favourite.js" defer></script>
+
+  <noscript>
+    <p>Enable JavaScript to view your favorites.<br />Thank You.</p>
+  </noscript>
+</body>
+</html>
