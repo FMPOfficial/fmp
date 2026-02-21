@@ -1,0 +1,1814 @@
+[
+  {
+    "type": "Checker",
+    "name": "Netflix Cookie Checker",
+    "description": "Check Netflix cookies \u2014 captures plan, screen count, country, and expiry details.",
+    "long_description": "Validates Netflix cookies and captures full slot details including plan type, screens, region, and expiry date. Works with all cookie types. VPN recommended to avoid IP bans.",
+    "requirements": "VPN recommended to avoid IP bans.",
+    "image": "assets/checkers-pic/netflix.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/netflix.png",
+      "assets/checkers-pic/checking.png",
+      "assets/checkers-pic/checking/netflix2.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "netflix"
+    ],
+    "keywords": [
+      "netflix slot checker",
+      "check netflix cookies",
+      "netflix account status",
+      "slot capture netflix",
+      "netflix cookies tool"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Month": "$8 or 20 TP Cookies",
+      "2 Months": "$14 or 35 TP Cookies",
+      "3 Months": "$17 or 43 TP Cookies",
+      "1 Year": "$23 or 60 TP Cookies or 15 TP monthly",
+      "Source Code": "$25",
+      "Custom Function": "+$5"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Netflix Cookie Privatizer",
+    "description": "\u26d4 This tool is dead and no longer for sale.",
+    "long_description": "This tool is no longer available. It has been discontinued and is not for sale.",
+    "requirements": "",
+    "image": "assets/checkers-pic/netflix.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "netflix",
+      "privatizer"
+    ],
+    "keywords": [
+      "netflix cookie privatizer",
+      "make netflix cookies private",
+      "cookie isolation netflix"
+    ],
+    "contact": "telegram",
+    "stock": "0",
+    "pricing": {}
+  },
+  {
+    "type": "Checker",
+    "name": "Outlook Cookie Checker",
+    "description": "\u26d4 This tool is dead and no longer for sale.",
+    "long_description": "This tool is no longer available. It has been discontinued and is not for sale.",
+    "requirements": "",
+    "image": "assets/checkers-pic/outlook.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "outlook"
+    ],
+    "keywords": [
+      "outlook cookie checker",
+      "check outlook login",
+      "outlook access tool"
+    ],
+    "contact": "telegram",
+    "stock": "0",
+    "pricing": {}
+  },
+  {
+    "type": "Checker",
+    "name": "Azure Cookie Checker",
+    "description": "\u26d4 This tool is dead and no longer for sale.",
+    "long_description": "This tool is no longer available. It has been discontinued and is not for sale.",
+    "requirements": "",
+    "image": "assets/checkers-pic/azure.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "azure"
+    ],
+    "keywords": [
+      "azure cookie checker",
+      "check azure login",
+      "azure access tool"
+    ],
+    "contact": "telegram",
+    "stock": "0",
+    "pricing": {}
+  },
+  {
+    "type": "Checker",
+    "name": "ChatGPT Cookie Checker",
+    "description": "Check ChatGPT cookies \u2014 detects Go, Plus, Pro, and Business plans with half-pro detection.",
+    "long_description": "Validates ChatGPT cookies and identifies plan type including Go, Plus, Pro, Business, and half-pro subscriptions. Sorts valid, invalid, and expired cookies. Works without proxies. Good for bulk checking.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/chatgpt.jpg",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/gpt1.png",
+      "assets/checkers-pic/checking/gpt2.png",
+      "assets/checkers-pic/checking/gpt3.png",
+      "assets/checkers-pic/checking/gpt4.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-22",
+    "tags": [
+      "gpt",
+      "chatgpt"
+    ],
+    "keywords": [
+      "chatgpt cookie check",
+      "validate gpt cookies",
+      "gpt plus status checker",
+      "chatgpt login session",
+      "gpt access tool",
+      "chatgpt",
+      "gpt"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$4",
+      "2 Months": "$6",
+      "1 Year (No Patch)": "$13",
+      "1 Year (Inc Patch)": "$17",
+      "Source Code": "$20"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Spotify Cookie Checker",
+    "description": "Check Spotify cookies \u2014 detects free/premium, captures region, plan type, and address.",
+    "long_description": "Validates Spotify cookies and captures subscription type, region, Spotify links, and address details. Sorts free and premium accounts. Proxy is required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/spotify.jpg",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/spotify1.png",
+      "assets/checkers-pic/checking/spotify2.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "spotify"
+    ],
+    "keywords": [
+      "spotify cookie checker",
+      "check spotify login",
+      "spotify subscription detector",
+      "detect premium spotify",
+      "spotify access tool"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$3",
+      "2 Months": "$5",
+      "1 Year (No Patch)": "$10",
+      "Source Code": "$13"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Jio Hotstar Cookie Checker",
+    "description": "Check Hotstar cookies \u2014 captures plan type, region, and account status.",
+    "long_description": "Validates Jio Hotstar cookies and displays plan type, region, and account details. Fast, proxyless, and clean UI. VPN needed if you're outside India.",
+    "requirements": "VPN required if outside India.",
+    "image": "assets/checkers-pic/hotstar.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/hotstar1.png",
+      "assets/checkers-pic/checking/hotstar2.png",
+      "assets/checkers-pic/checking/hotstar3.png",
+      "assets/checkers-pic/checking/hotstar4.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-22",
+    "tags": [
+      "jio hotstar"
+    ],
+    "keywords": [
+      "hotstar cookie check",
+      "validate hotstar cookie",
+      "check hotstar region",
+      "detect hotstar access",
+      "jio hotstar"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$3",
+      "2 Months": "$5",
+      "1 Year (No Patch)": "$10",
+      "Source Code": "$15"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Prime Video Cookie Checker",
+    "description": "Check Prime Video cookies \u2014 detects valid/invalid and region details.",
+    "long_description": "Validates Amazon Prime Video cookies across all regions. Highlights account details and sorts valid, invalid, and expired cookies. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/primevideo.jpg",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/primevideo1.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "prime"
+    ],
+    "keywords": [
+      "prime video cookie check",
+      "amazon prime cookie tool",
+      "validate prime account",
+      "check amazon video cookie"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$3",
+      "2 Months": "$5",
+      "1 Year (No Patch)": "$8",
+      "Source Code": "$10"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Crunchyroll Cookie Checker",
+    "description": "Check Crunchyroll cookies \u2014 captures subscription, region, and remaining days.",
+    "long_description": "Validates Crunchyroll cookies and captures session, subscription type, region, and remaining days. Includes auto-captcha solving. No proxy needed. Sorts cookies for easy use.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/crunchyroll.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/crunchyroll1.png",
+      "assets/checkers-pic/checking/crunchyroll2.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "crunchyroll"
+    ],
+    "keywords": [
+      "crunchyroll cookie checker",
+      "anime login checker",
+      "crunchyroll session status",
+      "region anime cookie check"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$7",
+      "1 Year (Inc Patch)": "$12",
+      "Source Code": "$15"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Freepik Cookie Checker",
+    "description": "Check Freepik cookies \u2014 detects free/premium, credits, and account details.",
+    "long_description": "Validates Freepik cookies and detects account type, remaining credits, and basic details. No proxy needed. Optional payment capture available for +$2.",
+    "requirements": "No proxy needed usually, but VPN may help occasionally.",
+    "image": "assets/checkers-pic/freepik.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/freepik1.png",
+      "assets/checkers-pic/checking/freepik2.png",
+      "assets/checkers-pic/checking/freepik3.png",
+      "assets/checkers-pic/checking/freepik4.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-04-29",
+    "update_date": "2025-04-29",
+    "tags": [
+      "freepik"
+    ],
+    "keywords": [
+      "freepik cookie checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$7",
+      "1 Year (No Patch)": "$15",
+      "Source Code": "$17"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Blackbox AI Cookie Checker",
+    "description": "Check Blackbox AI cookies \u2014 detects valid/expired and captures email and subscription ID.",
+    "long_description": "Validates Blackbox AI cookies and retrieves email, subscription ID, and account status. Sorts valid, expired, and duplicate cookies. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/blackboxai.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/blackboxai1.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "blackbox"
+    ],
+    "keywords": [
+      "blackbox ai login",
+      "check blackbox cookie",
+      "detect blackbox subscription",
+      "ai tool checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$7",
+      "1 Year (No Patch)": "$12",
+      "Source Code": "$15"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "2Captcha Cookie Checker",
+    "description": "Check 2Captcha cookies \u2014 extracts API keys and account balance.",
+    "long_description": "Validates 2Captcha cookies and extracts API keys and account balances. Fast and stable. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/2captcha.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/2captcha1.png",
+      "assets/checkers-pic/checking/2captcha2.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "2captcha"
+    ],
+    "keywords": [
+      "2captcha api key check",
+      "balance checker 2captcha",
+      "validate 2captcha token",
+      "captcha solver access"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$7",
+      "1 Year (No Patch)": "$12",
+      "Source Code": "$15"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Perplexity AI Cookie Checker",
+    "description": "Check Perplexity AI cookies \u2014 detects plan type, region, and account status.",
+    "long_description": "Validates Perplexity AI cookies and detects plan type (free/pro), region, and session status. Fast and no proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/perplexityai.jpg",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/perplexityai1.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "tags": [
+      "perplexity"
+    ],
+    "keywords": [
+      "perplexity ai login checker",
+      "perplexity cookies status",
+      "check perplexity session",
+      "perplexity ai tool",
+      "ai plan validation"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$7",
+      "1 Year (No Patch)": "$12",
+      "Source Code": "$15"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Eneba Cookie Checker",
+    "description": "Check Eneba cookies \u2014 captures account balance and loyalty points.",
+    "long_description": "Validates Eneba cookies and displays account balance and loyalty points. Good for log sorting and account management. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/eneba.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/eneba1.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-03-25",
+    "update_date": "2025-04-01",
+    "tags": [
+      "eneba"
+    ],
+    "keywords": [
+      "eneba balance check",
+      "eneba account checker",
+      "loyalty point validator",
+      "eneba cookie status"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$10",
+      "1 Year (No Patch)": "$13",
+      "1 Year (Inc Patch)": "$15",
+      "Source Code": "$20"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Claude AI Cookie Checker",
+    "description": "Check Claude AI cookies \u2014 detects free/pro/max and captures account details.",
+    "long_description": "Validates Claude AI cookies and detects plan type (free, Pro, Max). Captures account details and session status. Fast and no proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/claudeai.png",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/claudeai1.png",
+      "assets/checkers-pic/checking/claudeai2.png",
+      "assets/checkers-pic/checking/claudeai3.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-05-05",
+    "update_date": "2025-05-05",
+    "tags": [
+      "claude",
+      "ai",
+      "chatbot"
+    ],
+    "keywords": [
+      "claude ai login checker",
+      "validate claude cookies",
+      "check claude session",
+      "claude ai tool",
+      "ai plan validation",
+      "chatgpt",
+      "ai"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$7",
+      "1 Year (No Patch)": "$12",
+      "Source Code": "$15"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Peacock TV Cookie Checker",
+    "description": "Check Peacock TV cookies \u2014 captures plan type, payment info, and subscription details.",
+    "long_description": "Validates Peacock TV cookies and captures plan type, subscription status, and payment details. No proxy needed but must be in the US or use a US VPN.",
+    "requirements": "Must be in the US or use a US VPN.",
+    "image": "assets/checkers-pic/peacocktv.jpg",
+    "video": "",
+    "images": [
+      "assets/checkers-pic/checking/peacock1.png"
+    ],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-04-23",
+    "update_date": "2025-04-23",
+    "tags": [
+      "peacock tv"
+    ],
+    "keywords": [
+      "peacock tv cookie checker",
+      "validate peacock cookies"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Week": "$4",
+      "30 Days": "$8",
+      "1 Year (No Patch)": "$13",
+      "Source Code": "$15"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Trading View Cookie Checker",
+    "description": "Check Trading View cookies \u2014 detects plan type and account status.",
+    "long_description": "Validates Trading View cookies and captures subscription type and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/tradingview.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "tradingview"
+    ],
+    "keywords": [
+      "trading view cookie checker",
+      "tradingview cookies",
+      "tradingview account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "GenSpark AI Cookie Checker",
+    "description": "Check GenSpark AI cookies \u2014 detects account type and session status.",
+    "long_description": "Validates GenSpark AI cookies and captures account details and session status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/gensparkai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "gensparkai"
+    ],
+    "keywords": [
+      "genspark ai cookie checker",
+      "genspark cookies",
+      "genspark account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Kling AI Cookie Checker",
+    "description": "Check Kling AI cookies \u2014 detects plan type and account details.",
+    "long_description": "Validates Kling AI cookies and captures plan type and account status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/klingai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "klingai"
+    ],
+    "keywords": [
+      "kling ai cookie checker",
+      "kling cookies",
+      "kling account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Hailuoai Cookie Checker",
+    "description": "Check Hailuoai cookies \u2014 detects account type and session status.",
+    "long_description": "Validates Hailuoai cookies and captures account details and session status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/hailuoai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "hailuoai"
+    ],
+    "keywords": [
+      "hailuoai cookie checker",
+      "hailuoai cookies",
+      "hailuoai account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "MyCanalPlus Cookie Checker",
+    "description": "Check MyCanalPlus cookies \u2014 detects subscription and account details.",
+    "long_description": "Validates MyCanalPlus cookies and captures subscription type and account status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/mycanalplus.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "mycanalplus"
+    ],
+    "keywords": [
+      "mycanalplus cookie checker",
+      "canal plus cookies",
+      "mycanalplus account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Grok Cookie Checker",
+    "description": "Check Grok cookies \u2014 detects plan type and account status.",
+    "long_description": "Validates Grok cookies and captures plan type and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/grok.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "grok"
+    ],
+    "keywords": [
+      "grok cookie checker",
+      "grok cookies",
+      "grok ai checker",
+      "xai cookie checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "SMSVirtual Cookie Checker",
+    "description": "Check SMSVirtual cookies \u2014 detects balance and account details.",
+    "long_description": "Validates SMSVirtual cookies and captures account balance and details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/smsvirtual.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "smsvirtual"
+    ],
+    "keywords": [
+      "smsvirtual cookie checker",
+      "sms virtual cookies",
+      "smsvirtual account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Ottplay Cookie Checker",
+    "description": "Check Ottplay cookies \u2014 detects subscription and account status.",
+    "long_description": "Validates Ottplay cookies and captures subscription type and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/ottplay.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "ottplay"
+    ],
+    "keywords": [
+      "ottplay cookie checker",
+      "ottplay cookies",
+      "ottplay account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Cursor Cookie Checker",
+    "description": "Check Cursor cookies \u2014 detects plan type and account details.",
+    "long_description": "Validates Cursor cookies and captures plan type (free/pro) and account status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/cursor.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "cursor"
+    ],
+    "keywords": [
+      "cursor cookie checker",
+      "cursor ai cookies",
+      "cursor account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Musical AI Cookie Checker",
+    "description": "Check Musical AI cookies \u2014 detects account type and session status.",
+    "long_description": "Validates Musical AI cookies and captures account details and session status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/musicalai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "musicalai"
+    ],
+    "keywords": [
+      "musical ai cookie checker",
+      "musical ai cookies",
+      "musical ai account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Bolt Cookie Checker",
+    "description": "Check Bolt cookies \u2014 detects plan type and account details.",
+    "long_description": "Validates Bolt cookies and captures plan type and account status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/bolt.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "bolt"
+    ],
+    "keywords": [
+      "bolt cookie checker",
+      "bolt ai cookies",
+      "bolt account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Freebitco Cookie Checker",
+    "description": "Check Freebitco cookies \u2014 detects balance and account details.",
+    "long_description": "Validates Freebitco cookies and captures account balance and details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/freebitco.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "freebitco"
+    ],
+    "keywords": [
+      "freebitco cookie checker",
+      "freebitco cookies",
+      "freebitco account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Pinecone AI Cookie Checker",
+    "description": "Check Pinecone AI cookies \u2014 detects account type and usage details.",
+    "long_description": "Validates Pinecone AI cookies and captures account type and usage details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/pineconeai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "pineconeai"
+    ],
+    "keywords": [
+      "pinecone ai cookie checker",
+      "pinecone cookies",
+      "pinecone account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "MistralAI Cookie Checker",
+    "description": "Check MistralAI cookies \u2014 detects plan type and account status.",
+    "long_description": "Validates MistralAI cookies and captures plan type and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/mistralai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "mistralai"
+    ],
+    "keywords": [
+      "mistral ai cookie checker",
+      "mistral cookies",
+      "mistral account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Akool Cookie Checker",
+    "description": "Check Akool cookies \u2014 detects plan type and credits remaining.",
+    "long_description": "Validates Akool cookies and captures plan type, credits, and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/akool.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "akool"
+    ],
+    "keywords": [
+      "akool cookie checker",
+      "akool cookies",
+      "akool account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Deepswap Cookie Checker",
+    "description": "Check Deepswap cookies \u2014 detects plan type and account details.",
+    "long_description": "Validates Deepswap cookies and captures plan type and account status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/deepswap.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "deepswap"
+    ],
+    "keywords": [
+      "deepswap cookie checker",
+      "deepswap cookies",
+      "deepswap account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "LinkedIn Cookie Checker",
+    "description": "Check LinkedIn cookies \u2014 only very fresh live logs will show valid, old ones won't work.",
+    "long_description": "Validates LinkedIn cookies and captures account type (free/premium) and session details. Only very fresh live logs can be extracted and found valid \u2014 old or stale logs won't return any valid results. Good proxy required.",
+    "requirements": "Good proxy required. Only fresh live logs work.",
+    "image": "assets/checkers-pic/linkedin.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "linkedin"
+    ],
+    "keywords": [
+      "linkedin cookie checker",
+      "linkedin cookies",
+      "linkedin account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Grammarly Cookie Checker",
+    "description": "Check Grammarly cookies \u2014 detects free/premium and account details.",
+    "long_description": "Validates Grammarly cookies and captures plan type (free/premium) and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/grammarly.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "grammarly"
+    ],
+    "keywords": [
+      "grammarly cookie checker",
+      "grammarly cookies",
+      "grammarly account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Tod TV Cookie Checker",
+    "description": "Check Tod TV cookies \u2014 detects subscription and account status.",
+    "long_description": "Validates Tod TV cookies and captures subscription type and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/todtv.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "todtv"
+    ],
+    "keywords": [
+      "tod tv cookie checker",
+      "tod cookies",
+      "tod tv account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Manus AI Cookie Checker",
+    "description": "Check Manus AI cookies \u2014 detects account type and session status.",
+    "long_description": "Validates Manus AI cookies and captures account details and session status. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/manusai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "manusai"
+    ],
+    "keywords": [
+      "manus ai cookie checker",
+      "manus cookies",
+      "manus ai account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Surfshark Cookie Checker",
+    "description": "Check Surfshark cookies \u2014 detects plan type and remaining duration.",
+    "long_description": "Validates Surfshark VPN cookies and captures plan type, remaining duration, and account details. No proxy needed.",
+    "requirements": "No specific requirements.",
+    "image": "assets/checkers-pic/surfshark.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "surfshark"
+    ],
+    "keywords": [
+      "surfshark cookie checker",
+      "surfshark vpn cookies",
+      "surfshark account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Quillbot Acc Checker",
+    "description": "Check Quillbot accounts \u2014 detects plan type and account status.",
+    "long_description": "Validates Quillbot accounts and captures plan type (free/premium) and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/quillbot.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "quillbot"
+    ],
+    "keywords": [
+      "quillbot account checker",
+      "quillbot acc checker",
+      "quillbot premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "PIA VPN Acc Checker",
+    "description": "Check PIA VPN accounts \u2014 detects plan type and remaining duration.",
+    "long_description": "Validates PIA VPN accounts and captures plan type, expiry, and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/piavpn.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "piavpn"
+    ],
+    "keywords": [
+      "pia vpn account checker",
+      "pia acc checker",
+      "pia vpn premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Duolingo Acc Checker",
+    "description": "Check Duolingo accounts \u2014 detects plan type and account details.",
+    "long_description": "Validates Duolingo accounts and captures plan type (free/plus/max) and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/duolingo.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "duolingo"
+    ],
+    "keywords": [
+      "duolingo account checker",
+      "duolingo acc checker",
+      "duolingo premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Hotmail Acc Checker",
+    "description": "Check Hotmail accounts \u2014 detects valid/invalid and account status.",
+    "long_description": "Validates Hotmail accounts and captures account status and details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/hotmail.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "hotmail"
+    ],
+    "keywords": [
+      "hotmail account checker",
+      "hotmail acc checker",
+      "hotmail login checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Deezer Acc Checker",
+    "description": "Check Deezer accounts \u2014 detects free/premium and subscription details.",
+    "long_description": "Validates Deezer accounts and captures plan type, region, and subscription details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/deezer.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "deezer"
+    ],
+    "keywords": [
+      "deezer account checker",
+      "deezer acc checker",
+      "deezer premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Crunchyroll Acc Checker",
+    "description": "Check Crunchyroll accounts \u2014 detects plan type and remaining days.",
+    "long_description": "Validates Crunchyroll accounts and captures subscription type, region, and remaining days. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/crunchyroll-acc.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "crunchyroll-acc"
+    ],
+    "keywords": [
+      "crunchyroll account checker",
+      "crunchyroll acc checker",
+      "crunchyroll premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Eleven Labs Acc Checker",
+    "description": "Check Eleven Labs accounts \u2014 detects plan type and credits remaining.",
+    "long_description": "Validates Eleven Labs accounts and captures plan type, remaining credits, and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/elevenlabs.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "elevenlabs"
+    ],
+    "keywords": [
+      "eleven labs account checker",
+      "elevenlabs acc checker",
+      "eleven labs premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Plex TV Acc Checker",
+    "description": "Check Plex TV accounts \u2014 detects plan type and account status.",
+    "long_description": "Validates Plex TV accounts and captures plan type (free/pass) and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/plextv.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "plextv"
+    ],
+    "keywords": [
+      "plex tv account checker",
+      "plex acc checker",
+      "plex pass checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Dazn Acc Checker",
+    "description": "Check Dazn accounts \u2014 detects subscription and region details.",
+    "long_description": "Validates Dazn accounts and captures subscription type, region, and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/dazn.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "dazn"
+    ],
+    "keywords": [
+      "dazn account checker",
+      "dazn acc checker",
+      "dazn premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Epicon Acc Checker",
+    "description": "Check Epicon accounts \u2014 detects subscription and account status.",
+    "long_description": "Validates Epicon accounts and captures subscription type and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/epicon.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "epicon"
+    ],
+    "keywords": [
+      "epicon account checker",
+      "epicon acc checker",
+      "epicon premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Trading View Acc Checker",
+    "description": "Check Trading View accounts \u2014 detects plan type and account details.",
+    "long_description": "Validates Trading View accounts and captures plan type (free/pro/premium) and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/tradingview-acc.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "tradingview-acc"
+    ],
+    "keywords": [
+      "trading view account checker",
+      "tradingview acc checker",
+      "tradingview premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Loveable Acc Checker",
+    "description": "Check Loveable accounts \u2014 detects plan type and account status.",
+    "long_description": "Validates Loveable accounts and captures plan type and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/loveable.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "loveable"
+    ],
+    "keywords": [
+      "loveable account checker",
+      "loveable acc checker",
+      "loveable premium checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Contabo Acc Checker",
+    "description": "Check Contabo accounts \u2014 detects plan type and account details.",
+    "long_description": "Validates Contabo accounts and captures plan type and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/contabo.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "contabo"
+    ],
+    "keywords": [
+      "contabo account checker",
+      "contabo acc checker",
+      "contabo hosting checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Pingproxies Checker",
+    "description": "Check Pingproxies accounts \u2014 detects balance and proxy details.",
+    "long_description": "Validates Pingproxies accounts and captures balance, proxy details, and account status. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/pingproxies.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "pingproxies"
+    ],
+    "keywords": [
+      "pingproxies checker",
+      "pingproxies account checker",
+      "proxy balance checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "PyProxy Acc Checker",
+    "description": "Check PyProxy accounts \u2014 detects balance and account details.",
+    "long_description": "Validates PyProxy accounts and captures balance and account details. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/pyproxy.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "pyproxy"
+    ],
+    "keywords": [
+      "pyproxy account checker",
+      "pyproxy acc checker",
+      "pyproxy balance checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "PayPal Cookie Checker",
+    "description": "Check PayPal cookies \u2014 only very fresh live logs will show valid, old ones won't work.",
+    "long_description": "Validates PayPal cookies and captures balance, country, and verification status. Only very fresh live logs can be extracted and found valid \u2014 old or stale logs won't return any valid results. Good proxy required.",
+    "requirements": "Good proxy required. Only fresh live logs work.",
+    "image": "assets/checkers-pic/paypal.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "paypal"
+    ],
+    "keywords": [
+      "paypal cookie checker",
+      "paypal cookies",
+      "paypal balance checker",
+      "paypal account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Media AI",
+    "description": "Check Media AI cookies \u2014 detects account type and session status.",
+    "long_description": "Validates Media AI cookies and captures account details and session status. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/mediaai.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "mediaai"
+    ],
+    "keywords": [
+      "media ai checker",
+      "media ai cookie checker",
+      "media ai account checker"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  },
+  {
+    "type": "Checker",
+    "name": "Spotify VM",
+    "description": "Spotify VM tool \u2014 automated Spotify cookie validation at scale.",
+    "long_description": "Automated Spotify cookie validation tool for bulk checking. Good proxy required.",
+    "requirements": "Good proxy required.",
+    "image": "assets/checkers-pic/spotifyvm.png",
+    "video": "",
+    "images": [],
+    "discount": null,
+    "offer": null,
+    "offer_expiry": null,
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "tags": [
+      "spotifyvm"
+    ],
+    "keywords": [
+      "spotify vm",
+      "spotify vm checker",
+      "spotify bulk checker",
+      "spotify automation"
+    ],
+    "contact": "telegram",
+    "stock": "unlimited",
+    "pricing": {
+      "1 Day": "$1",
+      "1 Month": "$5",
+      "1 Year (No Patch)": "$15",
+      "1 Year (Inc Patch)": "$20",
+      "Source Code": "$30"
+    }
+  }
+]

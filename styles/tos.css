@@ -1,0 +1,215 @@
+/* ====================================== */
+/*       Terms Page — Advanced Styles     */
+/* ====================================== */
+
+/* ── Skip Link (Accessibility) ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-primary, #ff5722);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-decoration: none;
+  transition: top 0.25s ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ── Scroll-Reveal Animations ── */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger each terms item for a cascading reveal */
+.terms-item.fade-in-section:nth-child(1)  { transition-delay: 0.00s; }
+.terms-item.fade-in-section:nth-child(2)  { transition-delay: 0.04s; }
+.terms-item.fade-in-section:nth-child(3)  { transition-delay: 0.08s; }
+.terms-item.fade-in-section:nth-child(4)  { transition-delay: 0.12s; }
+.terms-item.fade-in-section:nth-child(5)  { transition-delay: 0.16s; }
+.terms-item.fade-in-section:nth-child(6)  { transition-delay: 0.20s; }
+.terms-item.fade-in-section:nth-child(7)  { transition-delay: 0.24s; }
+.terms-item.fade-in-section:nth-child(8)  { transition-delay: 0.28s; }
+.terms-item.fade-in-section:nth-child(9)  { transition-delay: 0.32s; }
+.terms-item.fade-in-section:nth-child(10) { transition-delay: 0.36s; }
+
+/* ── Terms Page Layout ── */
+.terms-page {
+  max-width: 900px;
+}
+
+/* ── Terms Heading ── */
+.terms-heading h2 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.terms-heading h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  background: var(--color-primary, #ff5722);
+  border-radius: 2px;
+  transition: width 0.35s ease;
+}
+.terms-heading:hover h2::after {
+  width: 72px;
+}
+.terms-heading p {
+  margin-bottom: 1.25rem;
+  color: var(--color-text-muted, #aaa);
+  line-height: 1.7;
+}
+
+/* ── Terms Content ── */
+.terms-content {
+  background-color: transparent;
+}
+
+/* ── Terms List ── */
+.terms-list {
+  list-style: none;
+  counter-reset: termIndex;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Terms Item ── */
+.terms-item {
+  counter-increment: termIndex;
+  margin-bottom: 1.4rem;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  transition: background-color 0.25s ease,
+              border-color 0.25s ease;
+}
+.terms-item:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-left-color: var(--color-primary, #ff5722);
+}
+.terms-item::before {
+  content: counter(termIndex) ". ";
+  font-weight: 700;
+  color: var(--color-primary, #ff5722);
+}
+
+/* ── Terms Item Heading ── */
+.terms-item-heading {
+  display: inline;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary, #ff5722);
+  transition: color 0.2s ease;
+}
+
+/* ── Terms Item Paragraph ── */
+.terms-item-paragraph {
+  display: block;
+  margin-top: 0.5rem;
+  line-height: 1.7;
+}
+.terms-item-paragraph strong {
+  color: var(--color-primary, #ff5722);
+}
+
+/* ── Link Enhancements ── */
+.terms-item-paragraph a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-primary, #ff5722);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.terms-item-paragraph a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.terms-item-paragraph a:hover::after,
+.terms-item-paragraph a:focus-visible::after {
+  width: 100%;
+}
+.terms-item-paragraph a:focus-visible {
+  outline: 2px solid var(--color-primary, #ff5722);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .terms-item {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.2rem;
+  }
+  .terms-item-heading {
+    font-size: 1.05rem;
+  }
+  .terms-item-paragraph {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-item {
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .terms-item-heading {
+    font-size: 1rem;
+  }
+  .terms-item-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .terms-item {
+    transition: none;
+  }
+  .terms-item-paragraph a::after,
+  .terms-heading h2::after {
+    transition: none;
+  }
+}
+
+/* ── Noscript Fallback ── */
+.noscript-msg {
+  padding: 2rem;
+  text-align: center;
+  background: #fee;
+  color: #900;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}

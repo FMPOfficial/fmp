@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Log Extractor",
+    "type": "Tools",
+    "description": "Extract cookies from log files quickly and cleanly. Skips corrupt data, sorts automatically, and works proxyless.",
+    "long_description": "Log Extractor (Cookies Only)\n\nFast and reliable tool to parse log files and extract cookies.\n\nWhat It Does:\n  - Parses log files and pulls out cookies\n  - Automatically skips corrupt or broken lines\n  - Sorts extracted cookies by site/service\n  - Works completely proxyless — no external connections needed\n  - Clean output ready for use with checkers or importers\n\nPricing:\n  - 1 Day: $0.50\n  - 1 Month: $2\n  - 1 Year (no updates): $5\n  - 1 Year (with updates): $8\n  - Source Code (.py): $10\n\nUpdates include speed improvements, new site support, and performance tweaks.\n\nLicensed .exe delivered with personal key. Source code option available as .py file.",
+    "image": "assets/tools/logextractor.png",
+    "images": [],
+    "video": "",
+    "tags": ["extractor", "logs", "automation"],
+    "release_date": "2025-03-25",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "1 Day": "$0.50",
+      "1 Month": "$2",
+      "1 Year (No Update)": "$5",
+      "1 Year (With Updates)": "$8",
+      "Source Code (.py)": "$10"
+    },
+    "discount": null,
+    "offer": null,
+    "offer_expiry": "",
+    "contact": "telegram",
+    "keywords": ["log extractor", "cookie extractor", "log parser", "extract cookies from logs", "cookie log tool", "log cookie parser", "proxyless extractor", "cookie extractor tool", "log file parser", "cookie sorter tool"]
+  },
+  {
+    "name": "ULP Combo Maker",
+    "type": "Tools",
+    "description": "Extract combos from ULP log files automatically. Stable output with consistent formatting.",
+    "long_description": "ULP Combo Maker\n\nExtract ULP-style combos from log files with clean and consistent output.\n\nWhat It Does:\n  - Extracts combos from ULP log files\n  - Stable and consistent output formatting\n  - Handles large log files efficiently\n  - Fast processing with minimal setup\n\nPricing:\n  - 1 Year: $10\n  - Source Code (.py): $15\n\nLicensed .exe delivered with personal key. Source code option available as .py file.\n\nContact @fmpChatBot for a demo, custom requests, or support.",
+    "image": "assets/tools/ulp.png",
+    "images": [],
+    "video": "",
+    "tags": ["combo", "automation", "ulp"],
+    "release_date": "2025-02-10",
+    "update_date": "2025-03-28",
+    "pricing": {
+      "1 Year": "$10",
+      "Source Code (.py)": "$15"
+    },
+    "discount": null,
+    "offer": null,
+    "offer_expiry": "",
+    "contact": "telegram",
+    "keywords": ["ulp combo maker", "ulp extractor", "combo extractor tool", "ulp log extractor", "extract combos from ulp", "ulp automation", "ulp combo extraction", "ulp format tool", "ulp log parser", "ulp script tool"]
+  }
+]

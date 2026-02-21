@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Flame Mod Paradise for premium mods, custom tools, and genuine Steam game keys. Reach us via Telegram, Discord, Email, and YouTube.">
+  <meta name="keywords" content="Flame Mod Paradise, contact, premium mods, custom tools, Steam keys">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Flame Mod Paradise">
+  <meta property="og:description" content="Get in touch for inquiries about premium mods, custom tools, and Steam game keys.">
+  <meta property="og:url" content="https://flamemodparadise.github.io/My-Site/pages/contact.html">
+  <meta property="og:image" content="../assets/icons/fmp-icon.gif">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Flame Mod Paradise">
+  <meta name="twitter:description" content="Connect with us via Telegram, Discord, Email, and more.">
+  <meta name="twitter:image" content="../assets/icons/fmp-icon.gif">
+
+  <title>Contact Us — Flame Mod Paradise</title>
+
+  <!-- Preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- HERO -->
+  <header class="contact-hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>Get in Touch</h1>
+      <p>Questions about premium mods, custom tools, Steam keys, and more? We're here to help.</p>
+    </div>
+  </header>
+
+  <!-- CONTACT CARDS -->
+  <main class="contact-main container">
+    <div class="contact-card-wrapper" id="contact-card-wrapper">
+      <!-- Populated by contact.js -->
+    </div>
+  </main>
+
+  <!-- IMPORTANT INFO -->
+  <section class="important-info container">
+    <h2>Important Information</h2>
+    <div class="info-list">
+      <div class="info-item">
+        <span class="info-icon">1</span>
+        <p>Due to heavy workload, I'm only available on <strong>weekends</strong> for new projects or updates. For existing/in-stock products, message according to your urgency — otherwise, please wait.</p>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">2</span>
+        <p>Before buying any checker, make sure to <strong>take a trial first</strong>. If it works well for you, go ahead and get more. If it doesn't suit your needs, don't buy more — simple as that.</p>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">3</span>
+        <p>Don't contact me if you think your logs are the best and expect 90% hit rate. Only reach out if you have <strong>proper knowledge</strong> about logs, current market conditions, proxies and some exe-related info.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+    <img src="../assets/icons/turn-up.gif" alt="" width="24" height="24">
+  </button>
+
+  <div id="site-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../layout.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script src="../scripts/contact.js" defer></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("../service-worker.js")
+          .then(r => console.log("SW registered:", r.scope))
+          .catch(e => console.error("SW error:", e));
+      });
+    }
+  </script>
+
+  <noscript>
+    <p>Please enable JavaScript for the best experience.</p>
+  </noscript>
+</body>
+</html>

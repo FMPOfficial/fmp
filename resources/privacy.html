@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Flame Mod Paradise</title>
+
+  <!-- Primary Meta -->
+  <meta name="description" content="Read the privacy policy of Flame Mod Paradise. We do not collect or store personal data." />
+  <meta name="keywords" content="Privacy, Flame Mod Paradise, No tracking, Static site, No cookies" />
+  <meta name="author" content="Flame Mod Paradise" />
+  <meta name="theme-color" content="#ff5722" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://flamemodparadise.github.io/My-Site/pages/privacy.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — Flame Mod Paradise" />
+  <meta property="og:description" content="We do not collect or store any personal data. This is a static, view-only site." />
+  <meta property="og:image" content="https://flamemodparadise.github.io/My-Site/assets/icons/fmp-icon.gif" />
+  <meta property="og:url" content="https://flamemodparadise.github.io/My-Site/pages/privacy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Flame Mod Paradise" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy Policy — Flame Mod Paradise" />
+  <meta name="twitter:description" content="We do not collect or store any personal data." />
+  <meta name="twitter:image" content="https://flamemodparadise.github.io/My-Site/assets/icons/fmp-icon.gif" />
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="../style.css" as="style" />
+  <link rel="preload" href="../styles/privacy.css" as="style" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/privacy.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy — Flame Mod Paradise",
+    "description": "Read the privacy policy of Flame Mod Paradise. We do not collect or store personal data.",
+    "url": "https://flamemodparadise.github.io/My-Site/pages/privacy.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Flame Mod Paradise",
+      "url": "https://flamemodparadise.github.io/My-Site/"
+    },
+    "dateModified": "2025-02-17"
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="site-header"></div>
+
+  <!-- Hero -->
+  <header class="terms-hero privacy-hero" role="banner">
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="hero-content container">
+      <h1>Privacy Policy</h1>
+      <p class="hero-subtitle">Your privacy matters. Here's how we protect it.</p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main-content" class="container" role="main">
+    <article class="resource-box privacy-box" itemscope itemtype="https://schema.org/Article">
+      <section class="privacy-section fade-in-section">
+        <h2 itemprop="headline">We Respect Your Privacy</h2>
+        <p>
+          Flame Mod Paradise is a static website intended solely for viewing purposes. We do <strong>not collect, store, or track</strong> any personal data or user information.
+        </p>
+      </section>
+
+      <section class="privacy-section fade-in-section">
+        <h2>No Tracking, No Cookies</h2>
+        <p>
+          This site does not use forms, analytics, cookies, or any tracking scripts. You can browse freely without concerns of your data being stored or shared.
+        </p>
+      </section>
+
+      <section class="privacy-section fade-in-section">
+        <h2>External Links</h2>
+        <p>
+          Any external links (e.g., Telegram, Discord) are for contact purposes only and are subject to their own privacy policies. We encourage you to review those policies independently.
+        </p>
+      </section>
+
+      <section class="privacy-section fade-in-section">
+        <h2>Questions?</h2>
+        <p>
+          If you have any questions or concerns, feel free to reach out via our
+          <a href="contact.html" aria-label="Go to Contact Page">Contact Page</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Scroll To Top -->
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top" type="button">
+    <img src="../assets/icons/turn-up.gif" alt="" width="24" height="24" loading="lazy" decoding="async" />
+  </button>
+
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../layout.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script>
+    // Service Worker
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("../service-worker.js", { scope: "../" })
+          .then(reg => console.log("[SW] Registered:", reg.scope))
+          .catch(err => console.error("[SW] Failed:", err));
+      });
+    }
+
+    // Scroll-reveal
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".fade-in-section");
+      if ("IntersectionObserver" in window && sections.length) {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+        );
+        sections.forEach(s => observer.observe(s));
+      } else {
+        sections.forEach(s => s.classList.add("is-visible"));
+      }
+    });
+  </script>
+
+  <noscript>
+    <div class="noscript-msg" role="alert">
+      <p><strong>JavaScript is disabled.</strong> Some features may not work as intended.</p>
+    </div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently Asked Questions about Flame Mod Paradise (FMP), covering premium mods, tools, and exclusive freebies.">
+  <meta name="keywords" content="Flame Mod Paradise, FMP FAQ, premium mods, automation tools">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FAQ — Flame Mod Paradise">
+  <meta property="og:description" content="Find answers to common questions about premium mods, automation tools, and more at Flame Mod Paradise.">
+  <meta property="og:url" content="https://flamemodparadise.github.io/My-Site/pages/faq.html">
+  <meta property="og:image" content="../assets/icons/fmp-icon.gif">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ — Flame Mod Paradise">
+  <meta name="twitter:description" content="Your questions answered about Flame Mod Paradise's premium mods, tools, and more.">
+  <meta name="twitter:image" content="../assets/icons/fmp-icon.gif">
+
+  <title>FAQ — Flame Mod Paradise</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="../styles/faq.css">
+</head>
+
+<body id="top">
+  <div id="site-header"></div>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar-true-right">
+    <div class="search-group">
+      <input id="searchInput" type="text" placeholder="Search..." aria-label="Search FAQs">
+      <select id="sortSelect" aria-label="Sort order">
+        <option value="name">Name A → Z</option>
+        <option value="release_date">Newest</option>
+        <option value="update_date">Updated</option>
+        <option value="discount">Top Discount</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="container">
+    <h1 class="title">Frequently Asked Questions</h1>
+    <p class="notice">
+      Got a question? Check below or <a href="contact.html">contact us</a>.
+    </p>
+  </header>
+
+  <div class="banner hidden" id="announcement-banner">
+    <p>🎁 Special Offer: 25% OFF on selected tools this week! <a href="#">Learn more</a></p>
+    <button id="close-banner" aria-label="Close banner">✖</button>
+  </div>
+
+  <!-- MAIN -->
+  <main class="container">
+    <div class="faq-controls">
+      <button id="openAllBtn" aria-label="Open all FAQs">Open All</button>
+      <button id="closeAllBtn" aria-label="Close all FAQs">Close All</button>
+    </div>
+    <section id="faq-container" role="region" aria-label="FAQ list"></section>
+  </main>
+
+  <!-- POPUP -->
+  <div class="popup-box hidden" id="popupMessage">
+    <div class="popup-content">
+      <h3 id="popupTitle">Requirements</h3>
+      <p id="popupText"></p>
+      <button class="close-popup-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+    <img src="../assets/icons/turn-up.gif" alt="" width="24" height="24">
+  </button>
+
+  <div id="site-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../layout.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script src="../scripts/faq.js" defer></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("../service-worker.js")
+          .then(r => console.log("SW registered:", r.scope))
+          .catch(e => console.error("SW error:", e));
+      });
+    }
+  </script>
+
+  <noscript>
+    <p>Please enable JavaScript for the best experience.</p>
+  </noscript>
+</body>
+</html>

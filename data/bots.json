@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Custom Discord Bot",
+    "type": "Bots",
+    "description": "Fully custom Discord bot built to your server's needs — moderation, auto roles, giveaways, and more.",
+    "long_description": "🤖 Custom-Built Discord Bot\n\n🎯 A Discord bot designed and coded specifically for your server — no generic templates, no bloat.\n\n⚡ What You Can Get:\n  - Auto role assignment on join\n  - Moderation tools (kick, ban, mute, warn system)\n  - Giveaway system with customizable timers\n  - Welcome/leave messages with embeds\n  - Ticket support system\n  - Custom commands tailored to your community\n\n🛡️ Built With:\n  - Python (discord.py)\n  - Clean, readable code you can maintain\n  - Hosted on your own VPS or 24/7 hosting guidance included\n\n📦 What's Included:\n  - Full source code delivered to you\n  - First-time setup done for you\n  - Brief walkthrough so you understand the code\n  - 1 free revision within 48 hours of delivery",
+    "requirements": "You provide your Discord server and a bot token (I'll guide you through creating one). I handle the full first-time setup. After delivery, you manage future changes — basic Python knowledge helps but isn't mandatory. Hosting guidance included.",
+    "image": "assets/bots/discord.jpg",
+    "tags": ["discord", "moderation", "giveaway", "automation", "custom bot"],
+    "release_date": "2025-04-01",
+    "update_date": "2025-04-03",
+    "price": "$5 – $15 (depends on features)",
+    "contact": "telegram",
+    "keywords": ["discord bot", "custom discord bot", "moderation bot", "giveaway bot", "auto role bot", "discord server bot", "ticket bot", "welcome bot", "discord automation", "discord.py bot", "discord mod bot", "server management bot"],
+    "discount": "Lifetime Deal",
+    "discount_expiry": null,
+    "offer": "1-Day Setup Included",
+    "offer_expiry": null
+  },
+  {
+    "name": "Custom Telegram Bot",
+    "type": "Bots",
+    "description": "Tailored Telegram bot for your shop, support desk, file sharing, or automation workflows.",
+    "long_description": "📩 Custom Telegram Bot\n\n🎯 A Telegram bot built from scratch for your exact use case — whether it's running a shop, handling support, or automating tasks.\n\n⚡ What You Can Get:\n  - Shop bot with product listings and order flow\n  - File sharing/storage bot with categories\n  - Auto-reply and support ticket system\n  - Scraper bots for data collection\n  - Broadcast and bulk messaging\n  - User management and admin controls\n  - Payment integration (if needed)\n\n🛡️ Built With:\n  - Python (python-telegram-bot / Telethon)\n  - Clean, well-documented code\n  - Hosting setup guidance included\n\n📦 What's Included:\n  - Full source code ownership\n  - Complete first-time deployment\n  - Quick walkthrough of how the bot works\n  - 1 free revision within 48 hours of delivery",
+    "requirements": "You provide a Telegram bot token from @BotFather (I'll walk you through it if needed). I handle the full initial setup and deployment. After delivery, you manage day-to-day use and future updates. Basic familiarity with Telegram bots is helpful but not required.",
+    "image": "assets/bots/telegram.png",
+    "tags": ["telegram", "shop bot", "support", "file bot", "automation"],
+    "release_date": "2025-04-01",
+    "update_date": "2025-04-03",
+    "price": "$5 – $15 (depends on features)",
+    "contact": "telegram",
+    "keywords": ["telegram bot", "custom telegram bot", "telegram shop bot", "file sharing bot", "telegram support bot", "telegram scraper", "telegram automation", "bulk message bot", "telegram store bot", "telegram admin bot", "botfather bot", "python telegram bot"],
+    "discount": "Lifetime Deal",
+    "discount_expiry": null,
+    "offer": "1-Day Setup Included",
+    "offer_expiry": null
+  }
+]

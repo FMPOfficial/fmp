@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Netflix Methods",
+    "type": "Method",
+    "description": "Learn Netflix access techniques — EM invite and manual privatization methods available.",
+    "long_description": "Netflix Methods\n\nTechniques to get Netflix access on your own terms.\n\nAvailable Methods:\n  - Netflix EM: Get an invite sent directly to your email without needing the owner's email access\n  - Manual Privatize: Convert public Netflix cookies into private ones for longer-lasting access\n\nPricing:\n  - Netflix EM: $1\n  - Manual Privatize: $1.50\n\nHow It Works:\n  - You receive a detailed step-by-step guide for the method you purchase\n  - Each method is explained clearly so you can repeat it yourself\n  - Support available if you get stuck during the process",
+    "requirements": "Basic familiarity with Netflix cookies required. For EM method, you need a valid Netflix cookie to work with. Manual privatize works on public cookies to make them private and longer-lasting.",
+    "tags": ["netflix", "method", "private"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "price": "- Netflix EM: $1\n- Manual Privatize: $1.50",
+    "contact": "telegram",
+    "stock": "Always",
+    "keywords": ["netflix method", "netflix em", "netflix privatize", "netflix invite method", "netflix cookie method", "netflix private cookie", "netflix access method", "netflix email invite", "manual privatize netflix", "netflix technique"],
+    "image": "assets/methods-pic/netflix.png"
+  },
+  {
+    "name": "GPT Invite Method",
+    "type": "Method",
+    "description": "Method to get ChatGPT Plus access by sending an invite to your own email. Step-by-step guide included.",
+    "long_description": "GPT Invite on Mail Method\n\nLearn how to get ChatGPT Plus access by sending an invite directly to your own email.\n\nWhat You Get:\n  - Complete step-by-step method guide\n  - Learn how to send a ChatGPT Plus invite to your email\n  - Works through team-based plan cookies\n  - Duration is luck-based — could be lifetime or short-term\n\nPricing:\n  - Invite on Mail Method: $2\n\nWhat You Need:\n  - A team-based plan cookie or account\n  - Your email address for receiving the invite\n\nNote: This is a method guide — you learn the technique and do it yourself. Duration of access varies and is not guaranteed.",
+    "requirements": "You need a team-based plan cookie or account. Duration is luck-based — could be lifetime or short-term, no guarantees. Your email address is required to receive the invite. This is a method guide, not a done-for-you service.",
+    "tags": ["chatgpt", "method", "invite"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "price": "- Invite on Mail Method: $2",
+    "contact": "telegram",
+    "stock": "Always",
+    "keywords": ["gpt invite method", "chatgpt invite method", "chatgpt mail invite", "gpt access method", "chatgpt email method", "gpt technique", "chatgpt team invite method", "gpt plus method", "chatgpt invite on mail", "openai invite method"],
+    "image": "assets/methods-pic/chatgpt.png"
+  },
+  {
+    "name": "Spotify Methods",
+    "type": "Method",
+    "description": "Spotify access methods — mail invite with accepting technique and C2P account conversion.",
+    "long_description": "Spotify Methods\n\nTechniques for getting Spotify Premium access.\n\nAvailable Methods:\n  - Invite + Accepting Method: Full method to send and accept a Spotify Premium invite on your email\n  - C2P (Change to Private): Convert the account's email to your own\n\nPricing:\n  - Invite + Accepting Method: $4\n  - C2P: $4\n\nWhat You Need:\n  - For Invite method: A family or duo owner-based cookie — prefer accounts that have never sent an invite before\n  - For C2P: Any Spotify cookie works\n\nYou receive a step-by-step guide for the method you purchase. Support available if you need help.",
+    "requirements": "For invite method: need a family or duo owner-based cookie, preferably from an account that has never sent an invite. For C2P: any Spotify cookie works. Basic cookie knowledge required.",
+    "tags": ["spotify", "method", "invite"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "price": "- Invite + Accepting Method: $4\n- C2P: $4",
+    "contact": "telegram",
+    "stock": "Always",
+    "keywords": ["spotify method", "spotify invite", "spotify c2p", "spotify invite method", "spotify account conversion", "spotify email invite", "spotify family invite", "spotify premium method", "spotify technique", "spotify cookie method", "spotify accepting method"],
+    "image": "assets/methods-pic/spotify.png"
+  },
+  {
+    "name": "Hotstar Method",
+    "type": "Method",
+    "description": "Convert a Hotstar account to your own number using the C2P technique. Receipt template option available.",
+    "long_description": "Hotstar C2P Method\n\nConvert a Hotstar account from the owner's number to your own number.\n\nAvailable Options:\n  - C2P without receipt template: Transfer ownership to your number\n  - Receipt template only: Get a ready-made receipt template for Hotstar\n  - C2P + Receipt template: Full method with template included\n\nPricing:\n  - C2P (without receipt template): $4\n  - Receipt template only: $5\n  - Both (C2P + receipt template): $8\n\nWhat You Need:\n  - An Indian mobile number (mandatory)\n  - Must be in India or using an India-based VPN\n  - A Hotstar cookie to work with\n\nStep-by-step guide provided with support if you need help.",
+    "requirements": "Indian mobile number is mandatory. Must be located in India or using an India-based VPN. A valid Hotstar cookie is required to perform the C2P method.",
+    "tags": ["hotstar", "method", "c2p"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "price": "- C2P (without receipt template): $4\n- Receipt template only: $5\n- Both (C2P + receipt template): $8",
+    "contact": "telegram",
+    "stock": "Always",
+    "keywords": ["hotstar method", "hotstar c2p", "hotstar account conversion", "hotstar technique", "hotstar cookie method", "hotstar change number", "hotstar private", "jio hotstar method", "hotstar access method", "hotstar india method", "hotstar receipt template"],
+    "image": "assets/methods-pic/hotstar.png"
+  }
+]

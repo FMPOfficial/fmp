@@ -1,0 +1,230 @@
+[
+  {
+    "name": "Netflix Cookies",
+    "type": "Cookie",
+    "description": "Stream Netflix movies, series, and documentaries — HD, UHD, and country-specific options available.",
+    "long_description": "🎬 Netflix Cookie Access\n\n🎯 Get working Netflix cookies to stream the full library — movies, series, documentaries, and Netflix Originals.\n\n⚡ Available Tiers:\n  - HD quality access\n  - UHD (4K) quality access\n  - Country-based cookies (choose your region)\n  - TP (Trusted Provider) cookies\n  - EM (Email Access) cookies\n\n📦 What You Get:\n  - Fresh, tested cookies delivered instantly\n  - Cookie import instructions included\n  - Replacement if cookie expires within guarantee window\n\n🔑 Stock is cookie-checker verified before delivery.",
+    "tags": ["netflix", "streaming", "movies", "series"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "HD": "$0.30",
+      "UHD": "$0.33",
+      "Country-Based": "$0.40",
+      "TP": "$0.50",
+      "EM": "$0.70"
+    },
+    "contact": "telegram",
+    "keywords": ["netflix cookies", "netflix account", "netflix premium", "netflix uhd", "netflix 4k", "streaming cookies", "netflix access", "netflix hd", "netflix country based", "watch netflix free", "netflix cookie import"],
+    "image": "assets/images/netflix.png",
+    "stock": "300 in stock (cc-based)"
+  },
+  {
+    "name": "Freepik Cookies",
+    "type": "Cookie",
+    "description": "Download Freepik premium vectors, photos, PSD files, and illustrations with download tokens included.",
+    "long_description": "🎨 Freepik Premium Cookie Access\n\n🎯 Get Freepik premium cookies with download tokens already loaded — perfect for designers, marketers, and content creators.\n\n⚡ Token Tiers Available:\n  - Under 10k tokens: basic access\n  - 10k+ tokens: standard tier\n  - 15k+ tokens: mid tier\n  - 20k+ tokens: high tier\n  - 25k+ tokens: max tier\n\n📦 What You Get:\n  - Verified working cookie with active tokens\n  - Access to premium vectors, photos, PSD, and AI images\n  - Cookie import guide included\n\n💰 Additional tokens available at $0.50 per 10k after purchase.\n\n🔑 Cookies verified before delivery.",
+    "requirements": "Tokens are pre-loaded on the cookie. After the included tokens run out, additional 10k tokens cost $0.50. Cookie is delivered with import instructions.",
+    "tags": ["freepik", "design", "graphics"],
+    "release_date": "2025-05-03",
+    "update_date": "2025-05-03",
+    "pricing": {
+      "Under 10k tokens": "$0.50",
+      "10k+ tokens": "$0.80",
+      "15k+ tokens": "$1",
+      "20k+ tokens": "$1.50",
+      "25k+ tokens": "$2"
+    },
+    "contact": "telegram",
+    "keywords": ["freepik cookies", "freepik premium", "freepik tokens", "freepik credits", "free vectors", "freepik download", "design resources", "freepik account", "graphic design cookies", "freepik psd", "freepik illustrations", "premium design assets"],
+    "image": "assets/images/freepik.png",
+    "stock": "5"
+  },
+  {
+    "name": "ChatGPT Cookies",
+    "type": "Cookie",
+    "description": "Access ChatGPT Go, Plus, Pro, or Business plans — GPT-4, image generation, and advanced tools.",
+    "long_description": "🤖 ChatGPT Cookie Access\n\n🎯 Get working ChatGPT cookies across all plan tiers — from Go to Business.\n\n⚡ What's Included (varies by plan):\n  - GPT-4 and GPT-4o model access\n  - DALL·E image generation\n  - Advanced data analysis and code interpreter\n  - Plugin and GPT store access\n  - Team workspace features (Business plans)\n\n📋 Stock is provided on demand — let the owner know which plan and how many you need, it will be arranged.\n\n🔑 Cookies are tested and verified before delivery.",
+    "requirements": "Use a cookie editor extension to import. Instructions provided on delivery. Features available depend on the plan tier of the cookie.",
+    "tags": ["chatgpt", "ai", "openai"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "Go": "$0.50 per 1",
+      "Plus": "$1 per 1",
+      "Pro": "$2 per 1",
+      "Business (Member)": "$4 per 1",
+      "Business (Admin)": "$7 per 1"
+    },
+    "contact": "telegram",
+    "keywords": ["chatgpt cookies", "chatgpt premium", "gpt4 access", "chatgpt account", "openai plus", "chatgpt cookie import", "chatgpt pro", "ai cookies", "gpt4o access", "chatgpt business", "chatgpt go", "openai business cookies"],
+    "image": "assets/images/chatgpt.png",
+    "stock": "On demand — message owner with plan and quantity"
+  },
+  {
+    "name": "Spotify Premium Cookies",
+    "type": "Cookie",
+    "description": "Listen ad-free with Spotify Premium — offline downloads, high-quality audio, and unlimited skips.",
+    "long_description": "🎵 Spotify Premium Cookie Access\n\n🎯 Get Spotify Premium cookies for the full ad-free music and podcast experience.\n\n⚡ What You Get:\n  - Ad-free music streaming\n  - Offline download capability\n  - High-quality audio (up to 320kbps)\n  - Unlimited skips and on-demand playback\n  - Access to Spotify's full podcast library\n\n📋 Multiple plan types available — Individual, Family, Duo, and Student.\n\n🔑 All cookies tested and working at time of delivery.",
+    "tags": ["spotify", "music", "streaming"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "Normal Based": "$0.30 per 1",
+      "Individual Premium": "$0.70 per 1",
+      "Family Premium (Owner)": "$1 per 1",
+      "Family Premium (Member)": "$0.30 per 1",
+      "Duo Premium (Owner)": "$0.80 per 1",
+      "Duo Premium (Member)": "$0.30 per 1",
+      "Student Premium": "$0.50 per 1",
+      "Others": "$0.50 per 1"
+    },
+    "contact": "telegram",
+    "keywords": ["spotify cookies", "spotify premium", "spotify account", "spotify ad free", "spotify offline", "music cookies", "spotify hifi", "streaming cookies", "spotify country based", "premium music access"],
+    "image": "assets/images/spotify.png",
+    "stock": "On demand — message owner with quantity"
+  },
+  {
+    "name": "Jio Hotstar Cookies",
+    "type": "Cookie",
+    "description": "Stream Hotstar's movies, TV shows, and live sports — IPL, cricket, and Bollywood all included.",
+    "long_description": "🏏 Jio Hotstar Cookie Access\n\n🎯 Get working Hotstar cookies for India's top streaming platform — live sports, Bollywood, TV shows, and Disney+ content.\n\n⚡ What You Can Watch:\n  - Live cricket (IPL, ICC events)\n  - Bollywood and regional movies\n  - TV show catch-ups and originals\n  - Disney+ library (India)\n  - Live sports (football, kabaddi, tennis)\n\n📋 Multiple duration options available — from mixed to long-duration cookies.\n\n🔑 Cookies verified and working before delivery.",
+    "requirements": "You must be located in India or use an India-based VPN to access Hotstar content. Cookie import instructions are provided on delivery.",
+    "tags": ["hotstar", "jio", "streaming"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "Mixed": "$1 per 10",
+      "Specific plans": "$1 per 3",
+      "Duration >200 days": "$1 per 2",
+      "Duration >300 days": "$1 per 1"
+    },
+    "contact": "telegram",
+    "keywords": ["hotstar cookies", "jio hotstar", "hotstar premium", "ipl streaming", "hotstar cricket", "bollywood streaming", "hotstar account", "disney hotstar", "indian streaming cookies", "hotstar live sports", "jiocinema cookies"],
+    "image": "assets/images/hotstar.png",
+    "stock": "Always"
+  },
+  {
+    "name": "Prime Video Cookies",
+    "type": "Cookie",
+    "description": "Watch Amazon Originals, blockbuster movies, and hit TV series on Prime Video.",
+    "long_description": "🎥 Prime Video Cookie Access\n\n🎯 Get working Prime Video cookies for Amazon's full streaming library — originals, licensed films, and series.\n\n⚡ What You Can Watch:\n  - Amazon Original series (The Boys, Reacher, Citadel)\n  - Blockbuster movie rentals and included titles\n  - Live sports (Thursday Night Football, etc.)\n  - X-Ray cast info and bonus content\n  - Multi-device streaming\n\n🔑 All cookies tested before delivery.",
+    "tags": ["primevideo", "amazon", "streaming"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "Mixed": "$1 per 10",
+      "Country-Based": "$1 per 8"
+    },
+    "contact": "telegram",
+    "keywords": ["prime video cookies", "amazon prime", "prime video account", "amazon streaming", "prime originals", "prime video free", "amazon prime cookies", "streaming cookies", "prime video access", "watch prime video", "amazon video premium"],
+    "image": "assets/images/primevideo.png",
+    "stock": "unlimited"
+  },
+  {
+    "name": "Claude AI Cookies",
+    "type": "Cookie",
+    "description": "Access Claude AI Pro and Max plans for coding, writing, and research. Personal use only — not for methods or resale.",
+    "long_description": "🧠 Claude AI Cookie Access\n\n🎯 Get working Claude Pro or Max cookies for Anthropic's advanced AI assistant.\n\n⚡ What You Get:\n  - Full Claude Pro or Max plan access\n  - All available Claude models (Sonnet, Opus, Haiku)\n  - Code generation, debugging, and review\n  - Document analysis and summarization\n  - Creative writing and brainstorming\n  - File uploads and image analysis\n\n📋 Stock is provided on demand — message the owner with which plan and how many you need, it will be arranged.\n\n⚠️ Important Notice:\n  - These cookies are for personal use only.\n  - Not intended for methods, automation, resale, or any other purpose.\n  - I am not responsible for how you use these cookies after purchase.\n  - I am not responsible for any usage limits, rate limits, or account restrictions you may encounter.\n\n🔑 Cookies verified and working at time of delivery.",
+    "requirements": "Personal use only. These cookies are not sold for methods, automation, or resale. I am not responsible for any usage limits or restrictions on the account. No refunds once cookie is delivered and confirmed working. Cookie import instructions provided.",
+    "tags": ["claude", "ai", "coding"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "Pro": "$3 per 1",
+      "Max 5x": "$5 per 1",
+      "Max 20x": "$7 per 1"
+    },
+    "contact": "telegram",
+    "keywords": ["claude ai cookies", "claude pro", "claude max", "anthropic claude", "claude account", "ai assistant cookies", "claude coding", "claude sonnet", "claude opus", "ai cookies", "claude pro access", "claude premium", "claude max 5x", "claude max 20x"],
+    "image": "assets/images/claudeai.png",
+    "stock": "On demand — message owner with plan and quantity"
+  },
+  {
+    "name": "Perplexity AI Cookies",
+    "type": "Cookie",
+    "description": "Use Perplexity Pro for AI-powered search, real-time answers, and cited research summaries.",
+    "long_description": "🔍 Perplexity AI Cookie Access\n\n🎯 Get working Perplexity Pro cookies for the AI-powered search engine — real-time answers with source citations.\n\n⚡ What You Get:\n  - Pro search with GPT-4 and Claude models\n  - Real-time web search with cited sources\n  - Unlimited Pro searches\n  - File upload and document analysis\n  - Image generation capabilities\n  - Focused research and deep-dive threads\n\n🔑 Cookies tested and verified before delivery.",
+    "tags": ["perplexity", "ai", "search"],
+    "release_date": "2025-03-19",
+    "update_date": "2025-04-01",
+    "pricing": {
+      "Mixed": "$1 per 10"
+    },
+    "contact": "telegram",
+    "keywords": ["perplexity cookies", "perplexity pro", "perplexity ai account", "ai search cookies", "perplexity premium", "research ai", "perplexity access", "ai search engine", "perplexity pro search", "cited answers ai", "perplexity free access"],
+    "image": "assets/images/perplexityai.png",
+    "stock": "unlimited"
+  },
+  {
+    "name": "Surfshark VPN Cookies",
+    "type": "Cookie",
+    "description": "Browse privately with Surfshark VPN — encrypted connections, geo-unblocking, and unlimited devices.",
+    "long_description": "🛡️ Surfshark VPN Cookie Access\n\n🎯 Get working Surfshark VPN cookies for encrypted browsing, geo-unblocking, and online privacy.\n\n⚡ What You Get:\n  - Encrypted VPN connection\n  - 3200+ servers across 100 countries\n  - Bypass geo-restrictions on any platform\n  - Ad blocker and malware protection (CleanWeb)\n  - Unlimited simultaneous device connections\n  - No-log policy\n\n🔑 Cookies checked and working before delivery.",
+    "requirements": "Standard cookies come with random plan durations. If you need a specific plan length (6 months, 1 year, etc.), the price is $1 per cookie. Import instructions included.",
+    "tags": ["surfshark", "vpn", "privacy"],
+    "release_date": "2025-04-23",
+    "update_date": "2025-04-23",
+    "pricing": {
+      "Standard": "$0.50 per 1",
+      "Specific plan duration": "$1 per 1"
+    },
+    "contact": "telegram",
+    "keywords": ["surfshark cookies", "surfshark vpn", "vpn cookies", "surfshark account", "vpn access", "geo unblock vpn", "surfshark premium", "cheap vpn", "vpn privacy cookies", "surfshark free", "unlimited vpn access"],
+    "image": "assets/images/surfshark.png",
+    "stock": "5-7"
+  },
+  {
+    "name": "Crunchyroll Cookies",
+    "type": "Cookie",
+    "description": "Stream anime on Crunchyroll — subbed, dubbed, and simulcast episodes with no ads.",
+    "long_description": "🍥 Crunchyroll Cookie Access\n\n🎯 Get working Crunchyroll Premium cookies for the world's largest anime streaming library.\n\n⚡ What You Get:\n  - Ad-free anime streaming\n  - Simulcast episodes straight from Japan\n  - Subbed and dubbed content\n  - Offline downloads\n  - Access to manga library\n  - Full back catalogue of classic and new series\n\n🔑 Cookies verified and working at time of delivery.",
+    "requirements": "Cookie is delivered with remaining subscription days. Price depends on how many days are left on the account. Cookie import instructions provided.",
+    "tags": ["crunchyroll", "anime", "streaming"],
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "pricing": {
+      "Base": "$0.50 per 1",
+      "100+ days remaining": "$1 per 1",
+      "200+ days remaining": "$2 per 1",
+      "300+ days remaining": "$3 per 1"
+    },
+    "contact": "telegram",
+    "keywords": ["crunchyroll cookies", "crunchyroll premium", "anime cookies", "crunchyroll account", "watch anime free", "crunchyroll ad free", "anime streaming cookies", "crunchyroll access", "simulcast anime", "crunchyroll manga", "crunchyroll no ads"],
+    "image": "assets/checkers-pic/crunchyroll.png",
+    "stock": "Always"
+  },
+  {
+    "name": "Blackbox AI Cookies",
+    "type": "Cookie",
+    "description": "Access Blackbox AI Pro for code generation, code chat, and AI-powered development tools.",
+    "long_description": "⬛ Blackbox AI Cookie Access\n\n🎯 Get working Blackbox AI Pro cookies for AI-powered coding assistance — code generation, auto-complete, and chat.\n\n⚡ What You Get:\n  - AI code generation across all languages\n  - Code chat and explanation\n  - Repository-level code search\n  - VS Code integration features\n  - Commit message generation\n  - Code review and debugging\n\n🔑 Cookies verified and working at time of delivery.",
+    "tags": ["blackbox", "ai", "coding"],
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "pricing": {
+      "1 Cookie": "$1"
+    },
+    "contact": "telegram",
+    "keywords": ["blackbox ai cookies", "blackbox ai pro", "blackbox coding", "ai code generator", "blackbox account", "coding ai cookies", "blackbox premium", "code chat ai", "blackbox vscode", "ai developer tools", "blackbox access"],
+    "image": "assets/checkers-pic/blackboxai.png",
+    "stock": "Always"
+  },
+  {
+    "name": "Peacock TV Cookies",
+    "type": "Cookie",
+    "description": "Stream Peacock TV for NBC shows, live sports, movies, and exclusive originals.",
+    "long_description": "🦚 Peacock TV Cookie Access\n\n🎯 Get working Peacock Premium cookies for NBCUniversal's streaming platform — live sports, hit shows, and movies.\n\n⚡ What You Get:\n  - NBC shows and Peacock Originals\n  - Live sports (NFL, Premier League, WWE, Olympics)\n  - Blockbuster movies and classics\n  - Next-day access to current NBC series\n  - Kids content and reality TV\n  - Ad-free streaming (Premium Plus cookies)\n\n🔑 Cookies verified and working at time of delivery.",
+    "requirements": "Peacock content may be region-locked to the US. A US-based VPN may be required if you're outside the United States. Cookie import instructions provided.",
+    "tags": ["peacock", "nbc", "streaming"],
+    "release_date": "2025-06-01",
+    "update_date": "2025-06-01",
+    "pricing": {
+      "1 Cookie": "$1"
+    },
+    "contact": "telegram",
+    "keywords": ["peacock tv cookies", "peacock premium", "peacock account", "nbc streaming", "peacock access", "watch peacock free", "peacock live sports", "nfl streaming cookies", "peacock movies", "peacock originals", "nbcuniversal streaming"],
+    "image": "assets/checkers-pic/peacocktv.jpg",
+    "stock": "Always"
+  }
+]

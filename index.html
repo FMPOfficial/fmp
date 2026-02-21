@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Flame Mod Paradise (FMP) offers premium mods, automation tools, and exclusive free offers like Netflix cookies, Spotify cookies, Hotstar cookies, ChatGPT cookies, and more. Join the community of tool enthusiasts today!" />
+  <meta name="keywords" content="Flame Mod Paradise, FMP mods, premium mods, automation tools, Netflix cookies, Spotify cookies, Hotstar cookies, ChatGPT cookies, tool store, free offers, cookie checker" />
+
+  <!-- Open Graph (defaults — dynamically updated per tool in detail view) -->
+  <meta property="og:title" id="og-title" content="Flame Mod Paradise - Premium Mods &amp; Tools for Automation" />
+  <meta property="og:description" id="og-description" content="Flame Mod Paradise offers premium mods, custom tools, and automation scripts along with exclusive free offers like Netflix cookies, Spotify cookies, Hotstar, and ChatGPT cookies." />
+  <meta property="og:url" id="og-url" content="https://flamemodparadise.github.io/My-Site/" />
+  <meta property="og:image" id="og-image" content="assets/icons/fmp-icon.gif" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Flame Mod Paradise" />
+
+  <link rel="canonical" id="canonical-link" href="https://flamemodparadise.github.io/My-Site/" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icons/icon-192.png" sizes="192x192" />
+  <link rel="icon" href="assets/icons/icon-512.png" sizes="512x512" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="preload" href="script.js" as="script" />
+  <link rel="preload" href="assets/placeholder.jpg" as="image" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" as="script" crossorigin />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" /></noscript>
+
+  <title>Flame Mod Paradise - Premium Mods, Tools, and Free Offers</title>
+
+  <!-- Structured Data — WebSite (default) -->
+  <script type="application/ld+json" id="ld-json-default">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Flame Mod Paradise",
+    "url": "https://flamemodparadise.github.io/My-Site/",
+    "description": "Flame Mod Paradise offers premium mods, automation tools, and exclusive free offers like Netflix cookies, Spotify cookies, and more.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://flamemodparadise.github.io/My-Site/"
+    }
+  }
+  </script>
+
+  <!-- Structured Data — Breadcrumb (injected dynamically by JS for detail views) -->
+  <script type="application/ld+json" id="ld-json-breadcrumb">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": []
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip to content (Accessibility) -->
+  <a href="#main-content" class="skip-link" id="skipLink">Skip to main content</a>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress" role="presentation" aria-hidden="true"></div>
+
+  <!-- Data Loading Progress Bar -->
+  <div id="dataLoadProgress" class="data-load-progress" role="progressbar" aria-label="Loading tools data" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-hidden="true">
+    <div class="data-load-bar" id="dataLoadBar"></div>
+  </div>
+
+  <!-- Pull-to-Refresh Indicator (mobile) -->
+  <div id="pullToRefresh" class="pull-to-refresh" aria-hidden="true">
+    <span class="ptr-spinner"></span>
+    <span class="ptr-text">Release to refresh</span>
+  </div>
+
+  <div class="mymain" id="mymain">
+    <div id="site-header"></div>
+
+    <!-- Search Bar -->
+    <div class="search-bar-true-right">
+      <div class="search-group" style="position:relative;">
+        <input id="searchInput" type="search" placeholder="Search tools..." aria-label="Search tools" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="autocompleteBox" aria-autocomplete="list" />
+        <div id="autocompleteBox" class="autocomplete-box hidden" role="listbox" aria-label="Search suggestions"></div>
+        <button id="clearSearchHistory" class="clear-history-btn hidden" type="button" aria-label="Clear search history" title="Clear search history">✕ Clear History</button>
+        <select id="sortSelect" aria-label="Sort tools by">
+          <option value="name">Name A → Z</option>
+          <option value="release_date">Newest</option>
+          <option value="update_date">Updated</option>
+          <option value="discount">Top Discount</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Hero Header -->
+    <header class="container" id="hero-header">
+      <h1 class="title">🚀 Browse &amp; Buy Custom Tools Instantly</h1>
+      <p class="notice">
+        Static site — no direct payment system. Contact me on
+        <a href="https://t.me/fmpChatBot" target="_blank" rel="noopener noreferrer">Telegram</a>
+        for access.
+      </p>
+
+      <!-- Animated Stats -->
+      <div class="homepage-stats" id="homepageStats" aria-label="Site statistics">
+        <div class="stat-item">
+          <span class="stat-number" id="statTotalTools" data-target="0">0</span>
+          <span class="stat-label">Total Tools</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="statCategories" data-target="0">0</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="statFavorites" data-target="0">0</span>
+          <span class="stat-label">Favorites</span>
+        </div>
+      </div>
+
+      <!-- Multi-Tag Filter -->
+      <div class="filter-tags" id="filters" role="group" aria-label="Filter tools by category"></div>
+    </header>
+
+    <!-- Announcement Banner -->
+    <div class="banner hidden" id="announcement-banner" role="alert">
+      <p>
+        🎁 Special Offer: 25% OFF on selected tools this week!
+        <a href="#">Learn more</a>
+      </p>
+      <button id="close-banner" aria-label="Close announcement banner">✖</button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content" role="main">
+      <!-- Breadcrumb (shown in detail view) -->
+      <nav class="breadcrumb hidden" id="breadcrumbNav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list" id="breadcrumbList">
+          <li><a href="#" id="breadcrumbHome">Home</a></li>
+          <li class="breadcrumb-separator" aria-hidden="true">›</li>
+          <li><a href="#" id="breadcrumbCategory">Category</a></li>
+          <li class="breadcrumb-separator" aria-hidden="true">›</li>
+          <li aria-current="page" id="breadcrumbCurrent">Tool Name</li>
+        </ol>
+      </nav>
+
+      <!-- Live Region for Screen Readers -->
+      <div id="liveRegion" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+      <!-- Tool List (populated by script.js) -->
+      <section class="main-grid" id="main-tool-list" aria-label="Tools listing"></section>
+
+      <!-- Empty State (shown when no results) -->
+      <div class="empty-state hidden" id="emptyState" role="status">
+        <div class="empty-state-icon" aria-hidden="true">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="52" cy="52" r="36" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+            <line x1="78" y1="78" x2="104" y2="104" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+            <path d="M42 48 L52 58 L66 42" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.2"/>
+          </svg>
+        </div>
+        <h3 class="empty-state-title">No tools found</h3>
+        <p class="empty-state-text">Try adjusting your search or filters to find what you're looking for.</p>
+        <button class="empty-state-btn" id="emptyStateClear" type="button">Clear all filters</button>
+      </div>
+    </main>
+
+    <!-- Install Prompt -->
+    <div class="install-box hidden" id="install-prompt" role="dialog" aria-label="Install application">
+      <p>📲 Install Tool Store as an app?</p>
+      <button id="install-now">Install Now</button>
+      <button id="install-later">Later</button>
+    </div>
+
+    <!-- Image Modal / Fullscreen Gallery -->
+    <div class="image-modal hidden" id="imageModal" role="dialog" aria-label="Image preview" aria-modal="true">
+      <div class="image-modal-content">
+        <button class="image-close-btn" id="modalCloseBtn" aria-label="Close image preview">✖</button>
+        <img id="modalImage" src="" alt="Preview" />
+        <!-- Thumbnail Strip (populated by JS) -->
+        <div class="modal-thumb-strip hidden" id="modalThumbStrip" role="list" aria-label="Gallery thumbnails"></div>
+      </div>
+    </div>
+
+    <!-- Requirements Popup -->
+    <div class="popup-box hidden" id="popupMessage" role="dialog" aria-label="Requirements" aria-modal="true">
+      <div class="popup-content">
+        <h3 id="popupTitle">Requirements</h3>
+        <p id="popupText"></p>
+        <button class="close-popup-btn" id="closePopupBtn">Close</button>
+      </div>
+    </div>
+
+    <!-- Scroll To Top (with percentage) -->
+    <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+      <span class="scroll-percent" id="scrollPercent" aria-hidden="true">0%</span>
+      <img src="assets/icons/turn-up.gif" alt="" aria-hidden="true" />
+    </button>
+
+    <!-- Sticky Back Button (visible in detail view on scroll) -->
+    <button class="sticky-back-btn hidden" id="stickyBackBtn" aria-label="Go back to tools list">← Back</button>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="layout.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" defer crossorigin></script>
+  <script src="script.js" defer></script>
+  <script>
+    // Service Worker registration
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker.register("./service-worker.js")
+          .then(function(reg) { console.log("SW registered:", reg.scope); })
+          .catch(function(err) { console.error("SW error:", err); });
+      });
+    }
+  </script>
+  <noscript>
+    <p>Enable JavaScript for better site readability.<br />Thank You.<hr /></p>
+  </noscript>
+</body>
+</html>

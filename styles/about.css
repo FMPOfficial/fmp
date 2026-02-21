@@ -1,0 +1,182 @@
+/* ====================================== */
+/*       About Page — Advanced Styles     */
+/* ====================================== */
+
+/* ── Skip Link (Accessibility) ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-primary, #ff5722);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-decoration: none;
+  transition: top 0.25s ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ── Scroll-Reveal Animations ── */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger each section */
+.about-section:nth-child(2) { transition-delay: 0.08s; }
+.about-section:nth-child(3) { transition-delay: 0.16s; }
+.about-section:nth-child(4) { transition-delay: 0.24s; }
+
+/* ── About Box — Content Styling ── */
+.about-box h2 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.about-box h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--color-primary, #ff5722);
+  border-radius: 2px;
+  transition: width 0.35s ease;
+}
+.about-section:hover h2::after {
+  width: 64px;
+}
+
+/* ── List Styling ── */
+.about-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+.about-box ul li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.6;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.about-box ul li:hover {
+  transform: translateX(4px);
+}
+.about-box ul li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-primary, #ff5722);
+  font-weight: 700;
+  font-size: 1.05em;
+  line-height: inherit;
+  transition: transform 0.25s ease;
+}
+.about-box ul li:hover::before {
+  transform: scale(1.2);
+}
+
+/* ── Section Dividers ── */
+.about-box .about-section + .about-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 1.75rem;
+  margin-top: 1.75rem;
+}
+
+/* ── Link Enhancements ── */
+.about-box a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-primary, #ff5722);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.about-box a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.about-box a:hover::after,
+.about-box a:focus-visible::after {
+  width: 100%;
+}
+.about-box a:focus-visible {
+  outline: 2px solid var(--color-primary, #ff5722);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── Responsive Refinements ── */
+@media (max-width: 768px) {
+  .about-box h2 {
+    font-size: 1.3rem;
+  }
+  .about-box ul li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.55rem;
+    font-size: 0.95rem;
+  }
+  .about-box .about-section + .about-section {
+    padding-top: 1.25rem;
+    margin-top: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-box h2 {
+    font-size: 1.15rem;
+  }
+  .about-box p,
+  .about-box ul li {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+}
+
+/* ── Reduced Motion Preference ── */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .about-box ul li,
+  .about-box a::after,
+  .about-box h2::after,
+  .about-box ul li::before {
+    transition: none;
+  }
+}
+
+/* ── Noscript Fallback ── */
+.noscript-msg {
+  padding: 2rem;
+  text-align: center;
+  background: #fee;
+  color: #900;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Telegram",
+    "icon": "../assets/icons/tgbot.png",
+    "title": "Telegram Bot",
+    "description": "Get immediate support via our Telegram Bot.",
+    "link": "https://t.me/fmpChatBot",
+    "buttonText": "Connect Now"
+  },
+  {
+    "type": "Telegram",
+    "icon": "../assets/icons/telegram.png",
+    "title": "Telegram Channel",
+    "description": "Join our channel for updates and support.",
+    "link": "https://t.me/flamemodparadiseofficial",
+    "buttonText": "Connect Now"
+  },
+  {
+    "type": "Discord",
+    "icon": "../assets/icons/footers-icons/discord.png",
+    "title": "Discord Server",
+    "description": "Join our community, share ideas, and stay updated.",
+    "link": "https://discord.gg/28P77Dp99H",
+    "buttonText": "Join Discord"
+  },
+  {
+    "type": "YouTube",
+    "icon": "../assets/icons/footers-icons/youtube.png",
+    "title": "YouTube",
+    "description": "Watch tutorials, reviews, and more on our channel.",
+    "link": "https://www.youtube.com/@FMP-yt?sub_confirmation=1",
+    "buttonText": "Visit Channel"
+  },
+  {
+    "type": "Payment",
+    "icon": "../assets/icons/payment.png",
+    "title": "Accepted Payments",
+    "description": "We accept Binance and major crypto: BTC, ETH, LTC, and more.",
+    "link": "#",
+    "buttonText": "Payment Info"
+  }
+]

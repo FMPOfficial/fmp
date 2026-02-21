@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Flame Mod Paradise</title>
+
+  <!-- Primary Meta -->
+  <meta name="description" content="Learn about Flame Mod Paradise — who we are, what we do, and why this project exists.">
+  <meta name="keywords" content="About Flame Mod Paradise, mods, gaming, development, security, modding community">
+  <meta name="author" content="Flame Mod Paradise">
+  <meta name="theme-color" content="#ff5722">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://flamemodparadise.github.io/My-Site/pages/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us — Flame Mod Paradise">
+  <meta property="og:description" content="Get to know Flame Mod Paradise. Explore our mission and values.">
+  <meta property="og:image" content="https://flamemodparadise.github.io/My-Site/assets/icons/fmp-icon.gif">
+  <meta property="og:url" content="https://flamemodparadise.github.io/My-Site/pages/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Flame Mod Paradise">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us — Flame Mod Paradise">
+  <meta name="twitter:description" content="Discover who we are and what drives Flame Mod Paradise.">
+  <meta name="twitter:image" content="https://flamemodparadise.github.io/My-Site/assets/icons/fmp-icon.gif">
+
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="../style.css" as="style">
+  <link rel="preload" href="../styles/about.css" as="style">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styles/about.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Us — Flame Mod Paradise",
+    "description": "Learn about Flame Mod Paradise — who we are, what we do, and why this project exists.",
+    "url": "https://flamemodparadise.github.io/My-Site/pages/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Flame Mod Paradise",
+      "url": "https://flamemodparadise.github.io/My-Site/",
+      "description": "A passion project providing curated game modifications, tools, and resources for educational and research purposes.",
+      "sameAs": [
+        "https://t.me/flamemodparadise"
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Navigation (Accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div id="site-header"></div>
+
+  <!-- Hero -->
+  <header class="terms-hero" role="banner">
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="hero-content container">
+      <h1>About Us</h1>
+      <p class="hero-subtitle">Discover who we are and what drives Flame Mod Paradise.</p>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main-content" class="container" role="main">
+    <article class="resource-box about-box" itemscope itemtype="https://schema.org/Article">
+      <section class="about-section fade-in-section">
+        <h2 itemprop="headline">What Is Flame Mod Paradise?</h2>
+        <p itemprop="description">
+          Flame Mod Paradise is a passion project built to provide curated game modifications, tools, and resources
+          for educational and research purposes. We focus on safe, static delivery — no logins, no ads, no tracking
+          — just clean access to content.
+        </p>
+      </section>
+
+      <section class="about-section fade-in-section">
+        <h2>Our Mission</h2>
+        <p>
+          To create a resource-rich platform where developers, modders, and enthusiasts can learn, explore, and
+          experiment with tools and mods in a secure, non-intrusive environment.
+        </p>
+      </section>
+
+      <section class="about-section fade-in-section">
+        <h2>What Makes Us Different?</h2>
+        <ul role="list">
+          <li>100% static site — no cookies, forms, or data tracking.</li>
+          <li>Focused on learning, testing, and ethical use.</li>
+          <li>Fast, simple, and distraction-free experience.</li>
+          <li>Regularly maintained and improved.</li>
+        </ul>
+      </section>
+
+      <section class="about-section fade-in-section">
+        <h2>Need Support or Want to Collaborate?</h2>
+        <p>
+          We're always open to feedback, bug reports, or ideas for tools you'd love to see. Just reach out on
+          <a href="https://t.me/flamemodparadise" target="_blank" rel="noopener noreferrer" aria-label="Contact us on Telegram">Telegram</a>
+          or use our <a href="contact.html" aria-label="Go to Contact Page">Contact Page</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Scroll To Top -->
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top" type="button">
+    <img src="../assets/icons/turn-up.gif" alt="" width="24" height="24" loading="lazy" decoding="async">
+  </button>
+
+  <div id="site-footer"></div>
+
+  <!-- Scripts (deferred for non-blocking load) -->
+  <script src="../layout.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script>
+    // Service Worker Registration
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("../service-worker.js", { scope: "../" })
+          .then(reg => {
+            console.log("[SW] Registered:", reg.scope);
+            reg.addEventListener("updatefound", () => {
+              const newWorker = reg.installing;
+              if (newWorker) {
+                newWorker.addEventListener("statechange", () => {
+                  if (newWorker.state === "activated") {
+                    console.log("[SW] New version activated.");
+                  }
+                });
+              }
+            });
+          })
+          .catch(err => console.error("[SW] Registration failed:", err));
+      });
+    }
+
+    // Intersection Observer for scroll-reveal animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".fade-in-section");
+      if ("IntersectionObserver" in window && sections.length) {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+        );
+        sections.forEach(section => observer.observe(section));
+      } else {
+        // Fallback: show all immediately
+        sections.forEach(s => s.classList.add("is-visible"));
+      }
+    });
+  </script>
+
+  <noscript>
+    <div class="noscript-msg" role="alert">
+      <p><strong>JavaScript is disabled.</strong> Please enable it for full functionality.</p>
+    </div>
+  </noscript>
+</body>
+</html>

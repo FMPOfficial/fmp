@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Real photos of products sold at Flame Mod Paradise, organized by category. Click a category to view the full gallery.">
+  <meta name="keywords" content="Flame Mod Paradise, reviews, product photos, cookies sold, checker sold">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Reviews — Flame Mod Paradise">
+  <meta property="og:description" content="Discover real product photos from our sales, organized by category.">
+  <meta property="og:url" content="https://flamemodparadise.github.io/My-Site/pages/reviews.html">
+  <meta property="og:image" content="../assets/icons/fmp-icon.gif">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reviews — Flame Mod Paradise">
+  <meta name="twitter:description" content="Real customer product photos, grouped by category.">
+  <meta name="twitter:image" content="../assets/icons/fmp-icon.gif">
+
+  <title>Reviews — Flame Mod Paradise</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="../styles/reviews.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- HERO -->
+  <header class="reviews-hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>Customer Reviews</h1>
+      <p>Real photos of products sold. Click a category to see the full gallery.</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="reviews-main container">
+    <!-- Category overview grid -->
+    <section id="categoryOverview" role="region" aria-label="Review categories">
+      <p>Loading categories...</p>
+    </section>
+
+    <!-- Detail gallery (hidden by default) -->
+    <section id="categoryDetail" class="hidden" role="region" aria-label="Category gallery">
+      <button id="backButton" class="back-btn" aria-label="Back to categories">← Back</button>
+      <h2 id="detailTitle"></h2>
+      <div id="detailPhotos" class="detail-photos-grid"></div>
+    </section>
+  </main>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+    <img src="../assets/icons/turn-up.gif" alt="" width="24" height="24">
+  </button>
+
+  <div id="site-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../layout.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script src="../scripts/reviews.js" defer></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("../service-worker.js")
+          .then(r => console.log("SW registered:", r.scope))
+          .catch(e => console.error("SW error:", e));
+      });
+    }
+  </script>
+
+  <noscript>
+    <p>Please enable JavaScript for the best experience.</p>
+  </noscript>
+</body>
+</html>
