@@ -47,7 +47,6 @@ const filtersEl        = $("filters");
 const searchInput      = $("searchInput");
 const sortSelect       = $("sortSelect");
 const scrollTopBtn     = $("scrollToTopBtn");
-const darkToggle       = $("darkToggle");
 const banner           = $("announcement-banner");
 const closeBannerBtn   = $("close-banner");
 const navToggle        = $("navbarToggle");
@@ -224,24 +223,6 @@ function activateLazy(root = document) {
   for (const img of root.querySelectorAll("img[data-src]")) {
     imgObserver.observe(img);
   }
-}
-
-/* === DARK MODE === */
-function initTheme() {
-  const stored = S.getTheme();
-  if (stored === "dark") {
-    document.body.classList.add("dark");
-  } else if (stored === "light") {
-    document.body.classList.remove("dark");
-  } else {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.body.classList.toggle("dark", prefersDark);
-    S.setTheme(prefersDark ? "dark" : "light");
-  }
-  darkToggle?.addEventListener("click", () => {
-    const isDark = document.body.classList.toggle("dark");
-    S.setTheme(isDark ? "dark" : "light");
-  });
 }
 
 /* === BANNER === */
@@ -1372,7 +1353,6 @@ window.addEventListener("hashchange", () => {
 });
 
 /* === INIT === */
-initTheme();
 initBanner();
 initScroll();
 initNav();
